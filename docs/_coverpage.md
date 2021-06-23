@@ -23,3 +23,6 @@
 [Get Started](#docsifyjs-template) <!-- TODO: Use ID of your homepage heading -->
 
 ![](_img/bg.png)
+<!-- background color -->
+
+![color](#f0f0f0)
