@@ -24,7 +24,7 @@ If you want learn about _Docsify_ and how to customize a docs like this, follow 
 [![teach me - DocsifyJS tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_tutorial-2ea44f)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 
-## Getting started
+## Quick start
 > How to create your own docs site like this one
 
 Click the button below to create your own copy of this repo.
