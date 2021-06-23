@@ -11,7 +11,7 @@
 
 <!-- TODO: You can delete the About and Create a Docsify site sections if you create a new project from this template -->
 
-## About
+## Installation
 
 This is a template for a simple but elegant docs site built on _Docsify_ which magically turns your markdown in your `docs` directory into a docs site. 
 
@@ -24,7 +24,7 @@ If you want learn about _Docsify_ and how to customize a docs like this, follow 
 [![teach me - DocsifyJS tutorial](https://img.shields.io/badge/teach_me-DocsifyJS_tutorial-2ea44f)](https://michaelcurrin.github.io/docsify-js-tutorial/#/)
 
 
-## Create a Docsify site
+## Getting started
 > How to create your own docs site like this one
 
 Click the button below to create your own copy of this repo.
