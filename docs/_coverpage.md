@@ -21,3 +21,5 @@
 
 [Asset-Store](https://assetstore.unity.com/) <!-- TODO: Remove on your copy of this template.-->
 [Get Started](#docsifyjs-template) <!-- TODO: Use ID of your homepage heading -->
+
+![](_img/bg.png)
