@@ -1,12 +1,12 @@
 <!-- TODO: Update title -->
 <h1 id="cover-heading">
-  TileWorldCreator v.3 Documentation
+  TileWorldCreator v.3
 </h1>
 
 <!--
 [![GitHub tags](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/) <!-- TODO: Update username and repo name -->
 
->  Official TileWorldCreator documentation <!-- TODO: Replace with your description -->
+> Official documentation <!-- TODO: Replace with your description -->
 
 
 <!-- TODO: Update to match your project's benefits/features. Git emojis work great here. -->
