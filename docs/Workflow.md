@@ -10,6 +10,10 @@ IMAGE
 
 ### Generation layer actions stack
 IMAGE
+Each generation layer executes each action in the action stack from top to bottom.  
+**Example:**  
+* `Cellular Automata` Generate a new map with a cellular automata generator
+* `Smooth` Modify the map by smoothing it
 
 ## Instantiation Layers
 > Next we have the instantiation layer stack. These layers are responsible for taking the final output of your generated map from the generation layers stack and use it to instantiate your tiles or objects.
