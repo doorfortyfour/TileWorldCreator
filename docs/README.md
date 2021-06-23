@@ -42,22 +42,3 @@ Then follow instructions in the original GitHub repo's `README.md` file to setup
         <img src="https://img.shields.io/static/v1?label=MichaelCurrin&message=docsify-js-template&color=blue&style=for-the-badge&logo=github" alt="MichaelCurrin - docsify-js-template">
     </a>
 </div>
-
-
-## Preview
-
-_TODO: Complete with your content - such as a screenshot of your app or command-line usage. You can also rename Preview to Sample._
-
-
-## Installation
-
-_TODO: Add your instructions here or link to an installation.md page._
-
-
-## Usage
-
-_TODO: Add your instructions here or link to a usage.md page._
-
-## TEST
-
-HALLOOOOO
