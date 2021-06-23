@@ -9,8 +9,9 @@ So it is always wise to create your `base` map as the first layer and every addi
 IMAGE
 
 ### Generation layer actions stack
-IMAGE
+IMAGE  
 Each generation layer executes each action in the action stack from top to bottom.  
+
 **Example:**  
 * `Cellular Automata` Generate a new map with a cellular automata generator
 * `Smooth` Modify the map by smoothing it
