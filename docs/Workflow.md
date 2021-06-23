@@ -3,7 +3,7 @@
 ## Generation Layers
 TileWorldCreator consists of two different layer stacks. The first one is the **Generation layer stack**. Each layer in the generation stack consists of different actions called generators (cellular automata, maze, L-System etc.)  or modifiers (copy, expand, smooth etc.). These will generate and modify your map.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
-So it is always wise to create your 'base' map as the first layer and every additional modifications which depends on the 'base' layer comes after it.
+So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
 ### Generation layer
 IMAGE
