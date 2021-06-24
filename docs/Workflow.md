@@ -22,6 +22,10 @@ TileWorldCreator consists of two different layer stacks. The first one is the **
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
++ `Layer Name`  
+  The actual layer name  
++ `Color`  
+  The color which should be used for the preview thumbnail texture  
 
 ### Actions stack  
 
