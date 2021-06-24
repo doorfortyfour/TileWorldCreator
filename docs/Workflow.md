@@ -27,7 +27,9 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 ![actionStack](img/actionStack.png)
 > Each generation layer executes each action in the action stack from top to bottom.  
-
+  
+  
+  
 **Example for a stack:**  
 #### Base Layer:
 ![baseLayer](img/exampleBaseLayer.png)
