@@ -3,6 +3,6 @@
 
 ### TileWorldCreator documentation
 
-[AssetStore](https://assetstore.unity.com)
+[AssetStore](https://assetstore.unity.com) | 
 [Get started](/GetStarted.md)
 </div>
