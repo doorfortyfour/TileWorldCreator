@@ -71,7 +71,7 @@ If this is not desired leave it off.
 `Rotation offset`  
 `Scale offset`  
 Add an additional transform offset to the object  
-`Childs` 
+`Childs`  
 When enabled you can assign an additional child object which will be instantiated in a certain radius around the parent object.  
 `Random Position`  
 `Random Rotation`  
