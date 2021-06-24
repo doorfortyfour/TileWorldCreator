@@ -17,5 +17,5 @@
 
 <!--![](img/bg.png)-->
 <!-- background color -->
-![color](red)
 <!--![color](#f0f0f0)-->
+![color](linear-gradient(to left bottom, #b3ffc8 0%, #eeffb3 100%))
