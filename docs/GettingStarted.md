@@ -4,7 +4,7 @@ Simply import the package from the package manager. You can move the TileWorldCr
 
 ## Quick start
 
-> Let's create our first map quickly. 
+> Let's create our first map quickly. We'll skip the details first. 
 
 First create a **TileWorldCreatorAsset** in your project.
 1. Right click in the project window and select: **Create -> TileWorldCreator -> New TileWorldCreator Asset**  
@@ -18,9 +18,11 @@ First create a **TileWorldCreatorAsset** in your project.
 ### Add your first generator
 ![quickstart2](img/twcQuickStart2.gif)
 
-1. Click on the + button of the layer stack and select: `Generators - CellularAutomata`  
-2. Click on the execute layer button  
-3. TADA your first generated map  
+1. Click on the + button in the generation layers stack to create a new layer.  
+2. Select the layer. 
+3. Click on the + button of the layer stack and select: `Generators - CellularAutomata`  
+4. Click on the execute layer button  
+5. TADA your first generated map  
 
 
 ### Instantiate tiles
