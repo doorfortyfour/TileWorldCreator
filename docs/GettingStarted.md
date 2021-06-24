@@ -2,9 +2,9 @@
 
 Simply import the package from the package manager. You can move the TileWorldCreator folder wherever you want inside of your project.
 
-## Getting started
+## Quick start
 
-> To create your first map you'll need to create two asset files (scriptable objects) a **TileWorldCreator Asset** and a **TileWorldCreator Tiles Preset**.
+> To create your first map you'll need to create two asset files (scriptable objects) a **TileWorldCreatorAsset** and a **TileWorldCreatorTilesPreset**.
 
 First create a **TileWorldCreatorAsset** in your project.
 1. Right click in the project window and select: **Create -> TileWorldCreator -> New TileWorldCreator Asset**  
