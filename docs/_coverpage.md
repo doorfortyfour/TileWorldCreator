@@ -1,3 +1,5 @@
+![logo](img/logo.png)
+
 <!-- TODO: Update title -->
 <h1 id="cover-heading">
   TileWorldCreator v.3
@@ -13,7 +15,7 @@
 [Asset-Store](https://assetstore.unity.com/) <!-- TODO: Remove on your copy of this template.-->
 [Get Started](#TileWorldCreator-documentation) <!-- TODO: Use ID of your homepage heading -->
 
-![](img/bg.png)
+<!--![](img/bg.png)-->
 <!-- background color -->
-
+![color](red)
 <!--![color](#f0f0f0)-->
