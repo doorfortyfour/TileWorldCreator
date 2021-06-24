@@ -4,22 +4,22 @@
 Because TileWorldCreator only requires four tiles to create beautiful tile maps, it is important to know how TileWorldCreator handles a map internally.
 The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles which would result in open unclosed maps. See images below:
 
-Error single tile:
+![tileError](img/tileError.png)
+Error single tile
 
-Subdivided map:
+![tileOk](img/tileOk.png)
+Subdivided map with no error
 
 In the end this means that the size of a final instantiated map will always be two times the size of the width and height. 10x10 = 20x20 in unity units.
 
 
 ## Layers stack
 
-## Generation Layers
+### Generation Layers
 TileWorldCreator consists of two different layer stacks. The first one is the **Generation layer stack**. Each layer in the generation stack consists of different actions called **generators** (cellular automata, maze, L-System etc.) or **modifiers** (copy, expand, smooth etc.). These will generate and modify your map.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
-### Generation layer
-IMAGE
 
 ### Generation layer actions stack
 IMAGE  
