@@ -6,6 +6,7 @@ Simply import the package from the package manager. You can move the TileWorldCr
 
 > Let's create our first map quickly. We'll skip the details for later.  
 
+### Create new asset
 First create a **TileWorldCreatorAsset** in your project.
 1. Right click in the project window and select: **Create -> TileWorldCreator -> New TileWorldCreator Asset**  
 2. Create a new empty scene and add a new GameObject to your scene.  
