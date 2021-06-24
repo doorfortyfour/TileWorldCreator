@@ -60,20 +60,20 @@ Here we have a map which has two height layers. The generation stack consists of
 ### Instantiate Objects
 The instantiate objects layer instantiates single prefabs based on the assigned generated map layer.
   
-**Name**  
+`Name`  
 The layer name  
-**Use layer**  
+`Use layer`  
 The generated map layer it should use for instantiation  
-**Use subdivided map**  
+`Use subdivided map`  
 If true, objects will be placed similiar to tiles by using the subdivided map. That means for a 1x1 cell it will place 2x2 objects.
 If this is not desired leave it off.  
-**Position offset & Rotation offset & Scale offset**  
+`bPosition offset & Rotation offset & Scale offset`  
 Add an additional transform offset to the object  
-**Childs**  
+`Childs` 
 When enabled you can assign an additional child object which will be instantiated in a certain radius around the parent object.  
-**Random Position & Random Rotation & Random Scaling**  
+`Random Position & Random Rotation & Random Scaling`  
 Modifies the objects transform by random values.  
-**Merge**  
+`Merge`  
 Merge the instantiated objects in to clusters.  
 
 ## Merging & Clusters
