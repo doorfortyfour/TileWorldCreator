@@ -10,7 +10,7 @@ The generation stack handles a map by its original size but after generation is 
 ![tileOk](img/tileOk.png)  
 **Subdivided map with no error**    
 
-In the end this means that the size of a final instantiated map will always be two times the size of the width and height. 10x10 = 20x20 in unity units.
+> In the end this means that the size of a final instantiated map will always be two times the size of the width and height. 10x10 = 20x20 in unity units.
 
 
 ## Layers stack
