@@ -5,8 +5,6 @@
   TileWorldCreator v.3
 </h1>
 
-<!--
-[![GitHub tags](https://img.shields.io/github/tag/MichaelCurrin/docsify-js-template.svg)](https://GitHub.com/MichaelCurrin/docsify-js-template/tags/) <!-- TODO: Update username and repo name -->
 
 > Official documentation <!-- TODO: Replace with your description -->
 
