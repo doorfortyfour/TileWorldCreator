@@ -32,14 +32,19 @@ So it is always wise to create your `base` map as the first layer and every addi
 **Example for a stack:**  
 #### Base Layer:
 ![baseLayer](img/exampleBaseLayer.png)
-1. `Cellular Automata` Generate a new map with a cellular automata generator
-2. `Smooth` Modify the map by smoothing it
++ `Cellular Automata`  
+  Generate a new map with a cellular automata generator
++ `Smooth`  
+  Modify the map by smoothing it
 
 #### Inner Layer:
 ![innerLayer](img/exampleInnerLayer.png)
-1. `Copy` copy the base map to the inner layer
-2. `Shrink` shrink the map by one tile 
-3. `Smooth` smooth the map a bit
++ `Copy`  
+  copy the base map to the inner layer
++ `Shrink`  
+  shrink the map by one tile 
++ `Smooth`  
+  smooth the map a bit
 
 
 ## Instantiation Layers
