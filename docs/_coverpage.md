@@ -9,20 +9,11 @@
 > Official documentation <!-- TODO: Replace with your description -->
 
 
-<!-- TODO: Update to match your project's benefits/features. Git emojis work great here. -->
-
-- :hourglass_flowing_sand: Quickly set up an elegant, responsive site
-- :open_file_folder: Use your markdown docs as content
-- :sparkles: No compilation step and no templating syntax to learn
-- :nut_and_bolt: Built on [DocsifyJS](https://docsify.js.org/)
-- :pushpin: The library loads in the browser - no local dependencies
-- :cloud: Serve locally and on GitHub Pages or Netlify
-
 
 [Asset-Store](https://assetstore.unity.com/) <!-- TODO: Remove on your copy of this template.-->
-[Get Started](#docsifyjs-template) <!-- TODO: Use ID of your homepage heading -->
+[Get Started](#TileWorldCreator-documentation) <!-- TODO: Use ID of your homepage heading -->
 
-![cover background image](img/bg.png)
+[cover background image](img/bg.png)
 <!-- background color -->
 
 <!--![color](#f0f0f0)-->
