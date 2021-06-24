@@ -46,10 +46,6 @@ So it is always wise to create your `base` map as the first layer and every addi
 Next we have the instantiation layer stack. These layers are responsible for taking the final output of your generated map from the generation layers stack and use it to instantiate your tiles or objects.
 > Make sure the generation layers stack has been executed first before trying to execute the instantiation layers. 
 
-### Merging & Clusters
-An instantiation layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the instantiation tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
-> When creating large maps it is highly recommended to enable merging. 
-
 ### Instantiate Tiles
 The instantiate tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles according to the assigned map. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
@@ -62,7 +58,33 @@ Example:
 Here we have a map which has two height layers. The generation stack consists of two layers, one which generates the ground and another with an inset which generates the top level. Because of this, we don't want to instantiate the tiles in the ground layer which are underneath the top layer. Therefore we assign the top layer to the ignore layers. 
 
 ### Instantiate Objects
+The instantiate objects layer instantiates single prefabs based on the assigned generated map layer.
 
+##### Name
+The layer name
+##### Use layer
+The generated map layer it should use for instantiation
+##### Use subdivided map
+If true, objects will be placed similiar to tiles by using the subdivided map. That means for a 1x1 cell it will place 2x2 objects.
+If this is not desired leave it off.
+##### Position offset
+Add a position offset
+##### Rotation offset
+Add a rotation offset
+##### Scale offset
+Add a scale offset
+##### Childs
+When enabled you can assign an additional child object which will be instantiated in a certain radius around the parent object.
+
+##### Random Position & Random Rotation & Random Scaling
+Modifies the objects transform by random values.
+
+##### Merge
+Merge the instantiated objects in to clusters.
+
+## Merging & Clusters
+An instantiation layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the instantiation tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
+> When creating large maps it is highly recommended to enable merging. 
 
 
 ## Execute layers
