@@ -11,3 +11,24 @@ First create a **TileWorldCreatorAsset** in your project.
 2. Create a new empty scene and add a new GameObject to your scene.  
 3. Add the TileWorldCreator component to it.  
 4. Now assign the newly created TileWorldCreator Asset file to the empty slot of the TileWorldCreator component.  
+
+
+![quickstart1](img/twcQuickStart1.gif)
+
+### Add your first generator
+![quickstart2](img/twcQuickStart2.gif)
+
+1. Click on the + button of the layer stack and select: `Generators - CellularAutomata`  
+2. Click on the execute layer button  
+3. TADA your first generated map  
+
+
+### Instantiate tiles
+![quickstart3](img/twcQuickStart3.gif)
+
+1. Add an instantiation layer of type `InstantiateTiles`  to the instantiation stack.  
+2. Name it: Island  
+3. Select the `Base` layer  
+4. Click on `Add Tiles Preset` and assign the cliffs tile preset located in `TileWorldCreator / Tiles / Cliffs`  
+5. Click on `Execute all instantiation layers`  
+6. Congratulations your map has been built!  
