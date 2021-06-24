@@ -24,22 +24,22 @@ TileWorldCreator executes the layers including their generators and modifiers fr
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
 
-### Generation layer actions stack
+### Generation layer actions stack  
 
 ![actionStack](img/actionStack.png)
 > Each generation layer executes each action in the action stack from top to bottom.  
 
 **Example for a stack:**  
+#### Base Layer:
 ![baseLayer](img/exampleBaseLayer.png)
-- Base layer
 1. `Cellular Automata` Generate a new map with a cellular automata generator
 2. `Smooth` Modify the map by smoothing it
-
+  
+#### Inner Layer:
 ![innerLayer](img/exampleInnerLayer.png)
-- Inner layer
-4. `Copy` copy the base map to the inner layer
-5. `Shrink` shrink the map by one tile 
-6. `Smooth` smooth the map a bit
+1. `Copy` copy the base map to the inner layer
+2. `Shrink` shrink the map by one tile 
+3. `Smooth` smooth the map a bit
 
 ## Instantiation Layers
 Next we have the instantiation layer stack. These layers are responsible for taking the final output of your generated map from the generation layers stack and use it to instantiate your tiles or objects.
