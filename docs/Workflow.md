@@ -52,11 +52,11 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 
 ## Instantiation Layers
-Next we have the instantiation layer stack. These layers are responsible for taking the final output of your generated map from the generation layers stack and use it to instantiate your tiles or objects.
+Next we have the instantiation layers stack. These layers are responsible for taking the final output of a generated layer from the generation layers stack and use it to instantiate the tiles or objects.
 > Make sure the generation layers stack has been executed first before trying to execute the instantiation layers. 
 
 ### Instantiate Tiles
-The instantiate tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles according to the assigned map. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
+The instantiate tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
 + `Layer Name`  
   The layer name  
@@ -74,7 +74,7 @@ The instantiate tiles layer takes a TileWorldCreator tiles preset and automatica
   Here we have a map which has two height layers. The generation stack consists of two layers, one which generates the ground and another with an inset which generates the top     level. Because of this, we don't want to instantiate the tiles in the ground layer which are underneath the top layer. Therefore we assign the top layer to the ignore layers. 
 
 ### Instantiate Objects
-The instantiate objects layer instantiates single prefabs based on the assigned generated map layer.
+The instantiate objects layer instantiates single prefabs based on the assigned generated layer.
   
 + `Name`  
   The layer name  
