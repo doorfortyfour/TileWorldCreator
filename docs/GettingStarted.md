@@ -4,7 +4,7 @@ Simply import the package from the package manager. You can move the TileWorldCr
 
 ## Quick start
 
-> Let's create our first map quickly. We'll skip the details first. 
+> Let's create our first map quickly. We'll skip the details for later.  
 
 First create a **TileWorldCreatorAsset** in your project.
 1. Right click in the project window and select: **Create -> TileWorldCreator -> New TileWorldCreator Asset**  
