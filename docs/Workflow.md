@@ -13,9 +13,8 @@ The generation stack handles a map by its original size but after generation is 
 > In the end this means that the size of a final instantiated map will always be two times the size of the width and height. Example: original size: 10x10 = 20x20 in unity units.
 
 
-## Layers stack
 
-### Generation Layers
+## Generation Layers
 
 ![generationLayer](img/generationLayer.png)
 
@@ -24,7 +23,7 @@ TileWorldCreator executes the layers including their generators and modifiers fr
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
 
-### Generation layer actions stack  
+### Actions stack  
 
 ![actionStack](img/actionStack.png)
 > Each generation layer executes each action in the action stack from top to bottom.  
@@ -40,7 +39,7 @@ So it is always wise to create your `base` map as the first layer and every addi
 1. `Copy` copy the base map to the inner layer
 2. `Shrink` shrink the map by one tile 
 3. `Smooth` smooth the map a bit
-
+    
 ## Instantiation Layers
 Next we have the instantiation layer stack. These layers are responsible for taking the final output of your generated map from the generation layers stack and use it to instantiate your tiles or objects.
 > Make sure the generation layers stack has been executed first before trying to execute the instantiation layers. 
