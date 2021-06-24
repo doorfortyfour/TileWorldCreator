@@ -4,10 +4,10 @@
 Because TileWorldCreator only requires four tiles to create beautiful tile maps, it is important to know how TileWorldCreator handles a map internally.
 The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles which would result in open unclosed maps. See images below:
 
-![tileError](img/tileError.png)
+![tileError](img/tileError.png)  
 Error single tile
 
-![tileOk](img/tileOk.png)
+![tileOk](img/tileOk.png)  
 Subdivided map with no error
 
 In the end this means that the size of a final instantiated map will always be two times the size of the width and height. 10x10 = 20x20 in unity units.
