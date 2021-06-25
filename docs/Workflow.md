@@ -1,7 +1,7 @@
 # Concept & Workflow
 
 ## Concept
-TileWorldCreator only requires four tiles to create beautiful tile maps compared to other autotiling solutions which requires a lot more. 
+TileWorldCreator only requires four tiles to create beautiful tile maps. Compared to other autotiling solutions this is quite unique.
 Therefore it is important to know, how TileWorldCreator handles a map internally.
 The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles, which would result in unclosed maps. See images below:
 
