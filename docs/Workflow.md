@@ -12,8 +12,27 @@ The generation stack handles a map by its original size but after generation is 
 
 > In the end this means that the size of a final instantiated map will always be two times the size of the width and height. Example: original size: 10x10 = 20x20 in unity units.
 
+## TileWorldCreator component
+![tileWorldCreator](img/tileWorldCreator.png)
 
+The TileWorldCreator component is the main component and is responsible for executing the layer stacks.
+By referencing the TileWorldCreator component you'll get also access to different runtime methods using the API.
 
++ `Map width` `Map height`  
+  The size of the map
++ `Cell size`  
+  The size of a single cell  
++ `Map orientation`  
+  The orientation of the map in the world (XZ or XY)  
++ `Use random seed`  
+  When enabled you can set a custom random seed which will be used for generating the map  
++ `Merge preview textures`  
+  When enabled, the preview thumbnail textures will be merged with the preview texture from the last layer.  
++ `Use custom cluster cell size` 
+  Enable this if you want to set a custom cluster size. Normally TileWorldCreator creates the cluster size based on the map size.  
+  But it's possible that in some use cases the cluster size might be to large, especially on larger maps.
+  Please be aware that the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
+  
 ## Generation Layers
 
 ![generationLayer](img/generationLayer.png)
@@ -81,9 +100,9 @@ The instantiate tiles layer takes a TileWorldCreator tiles preset and automatica
   Here we have a map which has two generation layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` instantiation layer. 
 
 ### Tiles preset
-![tilesPreset](img/tilesPreset.png)
-Tiles are stored in a separate asset file (scriptable object). This has the advantage that you can reuse tile presets 
-with different TileWorldCreator assets.
+![tilesPreset](img/tilesPreset.png)  
+Tiles are stored in a separate asset file (scriptable object). This has the advantage of being able to reuse tile presets 
+in different TileWorldCreator assets.
 #### Create a Tiles Preset
 1. Right click in the project view and select `Create / TileWorldCreator / New TileWorldCreator Tiles preset`
 2. Assign your tiles based on their type 
@@ -94,12 +113,13 @@ with different TileWorldCreator assets.
 
 
 ### Instantiate Objects
-The instantiate objects layer instantiates single prefabs based on the assigned generated layer.
+![instantiationLayerObject](img/instantiationLayerObjects.png)  
+The instantiate objects layer instantiates single prefabs based on the assigned generation layer.
   
 + `Name`  
   The layer name  
-+ `Use layer`  
-  The generated map layer it should use for instantiation  
++ `Assigned layer`  
+  The generation layer it should use for instantiation  
 + `Use subdivided map`  
 If true, objects will be placed similiar to tiles by using the subdivided map. That means for a 1x1 cell it will place 2x2 objects.  
 If this is not desired leave it off.  
