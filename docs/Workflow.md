@@ -30,9 +30,9 @@ By referencing the TileWorldCreator component you'll get also access to various 
 + `Merge preview textures`  
   When enabled, the preview thumbnail textures will be merged with the preview texture from the last layer.  
 + `Use custom cluster cell size` 
-  Enable this if you want to set a custom cluster size. Normally TileWorldCreator creates the cluster size based on the map size.  
+  TileWorldCreator partitions the map into clusters. Instantiatd tiles and objects are being assigned to these clusters. Normally TileWorldCreator creates the cluster size based on the map size automatically.  
   But it's possible that in some use cases the cluster size might be to large, especially on larger maps.
-  Please be aware that the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
+  Please be aware that, the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
   > for more information please refer to [Merging&Clusters](/#merging)  
 
 ## Generation Layers
