@@ -29,6 +29,8 @@ Generates a random noise map. Great in combination with an `expand` and `smooth`
 ## Paint
 ![paint](img/paint.gif)  
 The paint generator allows you to easily paint a map in the scene view. 
+
+
 1. Add a paint generator to your layer. 
 2. Enable the paint generator by clicking on the brush icon. 
 3. In the scene view you can now start adding or removing tiles by holding Left Ctrl key and holding the left or right mouse button. 
