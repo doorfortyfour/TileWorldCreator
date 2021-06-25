@@ -81,11 +81,21 @@ The instantiate tiles layer takes a TileWorldCreator tiles preset and automatica
   Here we have a map which has two height layers. The generation stack consists of two layers, one which generates the ground and another with an inset which generates the top     level. Because of this, we don't want to instantiate the tiles in the ground layer which are underneath the top layer. Therefore we assign the top layer to the ignore layers. 
 
 ### Tiles preset
+![tilesPreset](img/tilesPreset.png)
 Tiles are stored in a separate asset file (scriptable object). This has the advantage that you can reuse tile presets 
 with different TileWorldCreator assets.
 #### Create a Tiles Preset
 1. Right click in the project view and select `Create / TileWorldCreator / New TileWorldCreator Tiles preset`
-2. Assign your tiles based on their type `Edge` `Exterior Corner` `Interior Corner` `Fill`
+2. Assign your tiles based on their type 
++ `Edge`  
+  ![edgeTile](img/edgeTile.png)  
++ `Exterior Corner`  
+  ![exteriorCornerTile](img/exteriorCornerTile.png)  
++ `Interior Corner`  
+  ![interiorCornerTile](img/interiorCornerTile.png)  
++ `Fill`  
+  ![fillTile](img/fillTile.png)
+
 
 ### Instantiate Objects
 The instantiate objects layer instantiates single prefabs based on the assigned generated layer.
