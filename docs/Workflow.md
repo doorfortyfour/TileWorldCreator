@@ -87,14 +87,10 @@ with different TileWorldCreator assets.
 #### Create a Tiles Preset
 1. Right click in the project view and select `Create / TileWorldCreator / New TileWorldCreator Tiles preset`
 2. Assign your tiles based on their type 
-+ `Edge`  
-  ![edgeTile](img/edgeTile.png)  
-+ `Exterior Corner`  
-  ![exteriorCornerTile](img/exteriorCornerTile.png)  
-+ `Interior Corner`  
-  ![interiorCornerTile](img/interiorCornerTile.png)  
-+ `Fill`  
-  ![fillTile](img/fillTile.png)
++ ![edgeTile](img/edgeTile.png) `Edge`  
++ ![exteriorCornerTile](img/exteriorCornerTile.png) `Exterior Corner`    
++ ![interiorCornerTile](img/interiorCornerTile.png) `Interior Corner`  
++ ![fillTile](img/fillTile.png) `Fill`  
 
 
 ### Instantiate Objects
