@@ -33,7 +33,7 @@ By referencing the TileWorldCreator component you'll get also access to various 
   Enable this if you want to set a custom cluster size. Normally TileWorldCreator creates the cluster size based on the map size.  
   But it's possible that in some use cases the cluster size might be to large, especially on larger maps.
   Please be aware that the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
-  > for more information please refer to [Merging&Clusters](/GettingStarted.md#merging)  
+  > for more information please refer to [Merging&Clusters](/#merging)  
 
 ## Generation Layers
 
@@ -54,7 +54,7 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 ### Actions stack  
 ![actionStack](img/actionStack.png)
-> Each generation layer executes each action in the action stack from top to bottom.  
+!> Each generation layer executes each action in the action stack from top to bottom.  
 
 <br><br>
 **Example for a stack:**  
