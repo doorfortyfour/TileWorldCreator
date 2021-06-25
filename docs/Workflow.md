@@ -37,7 +37,7 @@ By referencing the TileWorldCreator component you'll get also access to various 
 
 ![generationLayer](img/generationLayer.png)
 
-TileWorldCreator consists of two different layer stacks. The `Generation layers` stack and the `Instantiation layers` stack. Each layer in the generation layer stack consists of different actions called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). With these you can create and modify a map. Layers can be used to build different parts of your map with different tile presets or objects.
+TileWorldCreator consists of two different layer stacks. The `Generation layers` stack and the `Instantiation layers` stack. Each layer in the generation layer stack has its proprieate actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). This let's you easily create different "parts" of your map by using different layers.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
