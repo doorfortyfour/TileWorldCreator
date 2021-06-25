@@ -4,7 +4,7 @@
 ### TileWorldCreator documentation
 
 [AssetStore](https://assetstore.unity.com) | 
-[Get started](/GetStarted.md)
+[Get started](/GettingStarted.md)
 </div>
 
 
