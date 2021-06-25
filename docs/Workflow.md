@@ -78,7 +78,7 @@ The instantiate tiles layer takes a TileWorldCreator tiles preset and automatica
   Ignore layers can be used if you want to skip instantiation for tiles from another generation layer which overlaps with the assigned one.  
   **Example:**  
   ![ignoreLayersExample](img/ignoreLayersExample.png)
-  Here we have a map which has two height layers. The generation stack consists of two layers, one which generates the ground and another with an inset which generates the top     level. Because of this, we don't want to instantiate the tiles in the ground layer which are underneath the top layer. Therefore we assign the top layer to the ignore layers. 
+  Here we have a map which has two generation layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` instantiation layer. 
 
 ### Tiles preset
 ![tilesPreset](img/tilesPreset.png)
