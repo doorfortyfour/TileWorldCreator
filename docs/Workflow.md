@@ -60,19 +60,24 @@ Next we have the instantiation layers stack. These layers are responsible for ta
 ### Instantiate Tiles
 The instantiate tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
+![instantiationLayerTiles](img/instantiationLayerTiles.png)
+
 + `Layer Name`  
   The layer name  
-+ `Use layer`  
++ `Assigned Layer`  
   The generated map layer it should use for instantiation  
 + `Global Position offset` `Global scaling offset`  
   Add an additional transform offset to a single tile  
 + `Merge tiles`  
   Merge tiles in to clusters  
++ `Add mesh collider`  
+  Add a mesh collider to the merged mesh
 + `Tiles Presets`  
   You can assign multiple tiles preset to a single tiles instantiation layer and set a random weight. This is great if you want to add some variety between tile sets.  
 + `Ignore layers`  
   Ignore layers can be used if you want to skip instantiation for tiles from another generation layer which overlaps with the assigned one.  
   **Example:**  
+  ![ignoreLayersExample](img/ignoreLayersExample.png)
   Here we have a map which has two height layers. The generation stack consists of two layers, one which generates the ground and another with an inset which generates the top     level. Because of this, we don't want to instantiate the tiles in the ground layer which are underneath the top layer. Therefore we assign the top layer to the ignore layers. 
 
 ### Instantiate Objects
