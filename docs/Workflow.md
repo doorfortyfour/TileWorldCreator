@@ -16,7 +16,7 @@ The generation stack handles a map by its original size but after generation is 
 ![tileWorldCreator](img/tileWorldCreator.png)
 
 The TileWorldCreator component is the main component and is responsible for executing the layer stacks.
-By referencing the TileWorldCreator component you'll get also access to different runtime methods using the API.
+By referencing the TileWorldCreator component you'll get also access to various runtime methods.
 
 + `Map width` `Map height`  
   The size of the map
@@ -37,7 +37,7 @@ By referencing the TileWorldCreator component you'll get also access to differen
 
 ![generationLayer](img/generationLayer.png)
 
-TileWorldCreator consists of two different layer stacks. The **Generation layers** stack and the **Instantiation layers** stack. Each layer in the generation layer stack consists of different actions called **generators** (cellular automata, maze, L-System etc.) or **modifiers** (copy, expand, smooth etc.). With these you can create and modify a map. Layers can be used to build different parts of your map with different tile presets or objects.
+TileWorldCreator consists of two different layer stacks. The `Generation layers` stack and the `Instantiation layers` stack. Each layer in the generation layer stack consists of different actions called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). With these you can create and modify a map. Layers can be used to build different parts of your map with different tile presets or objects.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
@@ -51,7 +51,6 @@ So it is always wise to create your `base` map as the first layer and every addi
   The action stack of this specific layer  
 
 ### Actions stack  
-
 ![actionStack](img/actionStack.png)
 > Each generation layer executes each action in the action stack from top to bottom.  
 
