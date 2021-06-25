@@ -11,19 +11,18 @@ First create a **TileWorldCreatorAsset** in your project.
 1. Right click in the project window and select: **Create -> TileWorldCreator -> New TileWorldCreator Asset**  
 2. Create a new empty scene and add a new GameObject to your scene.  
 3. Add the TileWorldCreator component to it.  
-4. Now assign the newly created TileWorldCreator Asset file to the empty slot of the TileWorldCreator component.  
 
-
+### Assign Asset
 ![quickstart1](img/twcQuickStart1.gif)
+1. Assign the newly created TileWorldCreator Asset file to the empty slot of the TileWorldCreator component.  
+2. Click on the + button in the generation layers stack to create a new layer.  
 
 ### Add your first generator
 ![quickstart2](img/twcQuickStart2.gif)
-
-1. Click on the + button in the generation layers stack to create a new layer.  
-2. Select the layer. 
-3. Click on the + button of the layer stack and select: `Generators - CellularAutomata`  
-4. Click on the execute layer button  
-5. TADA your first generated map  
+1. Select the layer. 
+2. Click on the + button of the layer stack and select: `Generators - CellularAutomata`  
+3. Click on the execute layer button  
+4. TADA your first generated map  
 
 
 ### Instantiate tiles
