@@ -9,11 +9,11 @@ TileWorldCreator has multiple algorithms built in but you can of course also imp
 The cellular automata generator is a great generator if you want to create an island type of map.
 
 ## BSP Dungeon
-![bspDungeon](img(bspDungeon.gif)  
+![bspDungeon](img/bspDungeon.gif)  
 BSP Dungeon generates dungeon like maps based on the BSP algorithm.
 
 ## L-System
-![lsystem](img(lsystem.gif)  
+![lsystem](img/lsystem.gif)  
 The L-System generator is great for creating road like networks or similiar looking maps.
 
 ## Maze
@@ -23,6 +23,8 @@ Use the maze generator to generate maze like maps.
 ## Random Noise
 ![random](img/randomNoise.gif)  
 Generates a random noise map. Great in combination with an `expand` and `smooth` modifier.
+**Random noise with `expand` and `smooth` modifier:**
+![randomModified](img/randomNoiseModified.gif)
 
 ## Paint
 ![paint](img/paint.gif)  
