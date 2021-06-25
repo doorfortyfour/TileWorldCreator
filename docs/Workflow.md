@@ -1,8 +1,9 @@
 # Concept & Workflow
 
 ## Concept
-Because TileWorldCreator only requires four tiles to create beautiful tile maps, it is important to know how TileWorldCreator handles a map internally.
-The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles which would result in open unclosed maps. See images below:
+TileWorldCreator only requires four tiles to create beautiful tile maps compared to other autotiling solutions which requires a lot more. 
+Therefore it is important to know, how TileWorldCreator handles a map internally.
+The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles, which would result in unclosed maps. See images below:
 
 ![tileError](img/tileError.png)  
 **Error single tile**
@@ -32,7 +33,8 @@ By referencing the TileWorldCreator component you'll get also access to various 
   Enable this if you want to set a custom cluster size. Normally TileWorldCreator creates the cluster size based on the map size.  
   But it's possible that in some use cases the cluster size might be to large, especially on larger maps.
   Please be aware that the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
-  
+  > for more information please refer to [Merging&Clusters](/GettingStarted.md#merging)  
+
 ## Generation Layers
 
 ![generationLayer](img/generationLayer.png)
@@ -131,7 +133,7 @@ If this is not desired leave it off.
 + `Merge`  
   Merge the instantiated objects in to clusters.  
 
-## Merging & Clusters
+## Merging & Clusters :id=merging
 An instantiation layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the instantiation tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
 > When creating large maps it is highly recommended to enable merging. 
 
