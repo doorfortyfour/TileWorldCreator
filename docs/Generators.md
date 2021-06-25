@@ -22,9 +22,9 @@ Use the maze generator to generate maze like maps.
 
 ## Random Noise
 ![random](img/randomNoise.gif)  
-Generates a random noise map. Great in combination with an `expand` and `smooth` modifier.
-**Random noise with `expand` and `smooth` modifier:**
-![randomModified](img/randomNoiseModified.gif)
+Generates a random noise map. Great in combination with an `expand` and `smooth` modifier.  
+**Random noise with `expand` and `smooth` modifier:**  
+![randomModified](img/randomNoiseModified.gif)  
 
 ## Paint
 ![paint](img/paint.gif)  
