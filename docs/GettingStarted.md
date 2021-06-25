@@ -34,3 +34,5 @@ First create a `TileWorldCreatorAsset` in your project.
 4. Click on `Add Tiles Preset` and assign the cliffs tile preset located in `TileWorldCreator / Tiles / Cliffs`  
 5. Click on `Execute all instantiation layers`  
 6. Congratulations your map has been built!  
+  
+1[quickstart4](img/twcQuickStart4.gif)
