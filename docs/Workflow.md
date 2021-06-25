@@ -51,8 +51,6 @@ So it is always wise to create your `base` map as the first layer and every addi
   copy the base map to the inner layer
 + `Shrink`  
   shrink the map by one tile 
-+ `Smooth`  
-  smooth the map a bit
 
 
 ## Instantiation Layers
