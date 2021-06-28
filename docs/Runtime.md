@@ -5,8 +5,8 @@ In order to modify a map at runtime you'll have to add a paint generator to the 
 2. Name it
 3. Add a `paint` modifier to the layer
 
-You can now modify the layer by calling:
-    ```cs
+You can now modify the layer by calling:  
+    ```csharp
     // TileWorldCreator component reference
     public TileWorldCreator twc;
     // Modify map
@@ -22,20 +22,20 @@ You can now modify the layer by calling:
   
  ## Clear Map
  To clear the paint layer at runtime simply use:
-    ```cs
+    ```csharp
     // Clear map
     twc.FillMap(string _layerName, bool value=false);
     ```
  ## Fill Map
 To fill a map use:
-    ```cs
+    ```csharp
     // Fill map
     twc.FillMap(string _layerName, bool value=true);
     ```
  ## Copy Map
 The copy map method works like the editor copy map functionality.
 It copies the last output to the paint modifier.
-    ```cs
+    ```csharp
     // Copy map
     twc.CopyMap(string _layerName);
     ```
