@@ -18,3 +18,27 @@ You can now modify the layer by calling:
   The x position on the map
 + `_y`
   The y position on the map
+  
+  
+ ## Clear Map
+ To clear the paint layer at runtime simply use:
+ 
+    // Clear map
+    twc.FillMap(string _layerName, bool value=false);
+ 
+ ## Fill Map
+To fill a map use:
+
+    // Fill map
+    twc.FillMap(string _layerName, bool value=true);
+
+ ## Copy Map
+The copy map method works like the editor copy map functionality.
+It copies the last output to the paint modifier.
+
+    // Copy map
+    twc.CopyMap(string _layerName);
+
+
+**Example**
+> Please also have a look at the runtime editor demo scene.
