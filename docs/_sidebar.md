@@ -6,5 +6,6 @@
 - [Presets](Presets.md)
 - [Save and Load](SaveAndLoad.md)
 - [Runtime modification](Runtime.md)
+- [Multiple maps](MultipleMaps.md)
 - [Demo scenes](DemoScenes.md)
 - [API](API.md)
