@@ -39,4 +39,4 @@ First create a `TileWorldCreatorAsset` in your project.
 5. Click on `Execute all instantiation layers`  
 6. Congratulations your map has been built!  
   
-1[quickstart4](img/twcQuickStart4.gif)
+![quickstart4](img/twcQuickStart4.gif)
