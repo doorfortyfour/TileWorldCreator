@@ -6,12 +6,14 @@ In order to modify a map at runtime you'll have to add a paint generator to the 
 3. Add a `paint` modifier to the layer
 
 You can now modify the layer by calling:  
+
     ```csharp
     // TileWorldCreator component reference
     public TileWorldCreator twc;
     // Modify map
     twc.ModifyMap(string _layerName, int _x, int _y);
     ```
+    
 + `_layerName`
   The generation layer name which has the paint modifier you want to modify
 + `_x`
