@@ -8,6 +8,8 @@
   ```  
   
   Returns the final generated map from a layer as a TileWorldCreatorPartitioning class.  
+  The TileWorldCreatorPartitioning class contains the `worldPartitionTiles` dictionary which contains
+  all generated information about the map.
   
 ### GetMapOutputFromLayer (string layername)
 Return the final generated map from a layer as a bool array.
@@ -47,4 +49,7 @@ Returns the tile data located at the position.
 
 ### OnGenerationComplete
 ### OnInstantiationComplete
+
+
+# TileWorldCreatorWorldData
 
