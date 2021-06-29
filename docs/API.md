@@ -43,3 +43,8 @@ Returns the tile data located at the position.
 
 ### GetAction(string layername, int stackindex)
 
+## Events
+
+### OnGenerationComplete
+### OnInstantiationComplete
+
