@@ -1,9 +1,9 @@
 # Concept & Workflow
 
 ## Concept
-TileWorldCreator only requires four tiles to create beautiful tile maps. Compared to other autotiling solutions this is quite unique.
+TileWorldCreator only requires four tiles to create tile maps.
 Therefore it is important to know, how TileWorldCreator handles a map internally.
-The generation stack handles a map by its original size but after generation is completed the map needs to be subdivided in order to be able to place the tiles correctly without creating single lost tiles, which would result in unclosed maps. See images below:
+Each blueprint layer, including its generators and modifiers, handles a map by its original size. After generation is completed, the map is being subdivided in order to be able to place the tiles correctly without creating single lost tiles, which would result in unclosed maps. See images below:
 
 ![tileError](img/tileError.png)  
 **Error single tile**
@@ -11,13 +11,13 @@ The generation stack handles a map by its original size but after generation is 
 ![tileOk](img/tileOk.png)  
 **Subdivided map with no error**    
 
-> In the end this means that the size of a final instantiated map will always be two times the size of the width and height. Example: original size: 10x10 = 20x20 in unity units.
+> In the end this means, that the size of a final instantiated map will always be two times the size of the width and height. So a map with the size of 10x10 will be the size of 20x20 unity units.
 
 ## TileWorldCreator component
 ![tileWorldCreator](img/tileWorldCreator.png)
 
-The TileWorldCreator component is the main component and is responsible for executing the layer stacks.
-By referencing the TileWorldCreator component you'll get also access to various runtime methods.
+The TileWorldCreator component is the main component and is responsible for executing the blueprint and build layer stacks.
+By referencing the TileWorldCreator component you'll also get access to various runtime methods.
 
 + `Map width` `Map height`  
   The size of the map
@@ -35,11 +35,11 @@ By referencing the TileWorldCreator component you'll get also access to various 
   Please be aware that, the smaller the cluster size is, the longer it'll take to instantiate the tiles and objects.  
   > for more information please refer to [Merging&Clusters](/Workflow.md#merging)  
 
-## Generation Layers
+## Blueprint Layers
 
 ![generationLayer](img/generationLayer.png)
 
-TileWorldCreator consists of two different layer stacks. The `Generation layers` stack and the `Instantiation layers` stack. Each layer in the generation layer stack has its proprieate actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). This let's you easily create different "parts" of your map by using different layers.
+TileWorldCreator consists of two different layer stacks. The `Blueprint layers` stack and the `Build layers` stack. Each layer in the blueprint layer stack has its proprieate actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). By combining those actions and layers you can easily create different "parts" of your map.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
@@ -73,12 +73,12 @@ So it is always wise to create your `base` map as the first layer and every addi
   shrink the map by one tile 
 
 
-## Instantiation Layers
+## Build Layers
 Next we have the instantiation layers stack. These layers are responsible for taking the final output of a generated layer from the generation layers stack and use it to instantiate the tiles or objects.
 > Make sure the generation layers stack has been executed first before trying to execute the instantiation layers. 
 
-### Instantiate Tiles
-The instantiate tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
+### Build tiles Layer
+The build tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned blueprint layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
 ![instantiationLayerTiles](img/instantiationLayerTiles.png)
 
@@ -113,9 +113,9 @@ in different TileWorldCreator assets.
 + ![fillTile](img/fillTile.png) `Fill`  
 
 
-### Instantiate Objects
+### Build objects layer
 ![instantiationLayerObject](img/instantiationLayerObjects.png)  
-The instantiate objects layer instantiates single prefabs based on the assigned generation layer.
+The build objects layer instantiates single prefabs based on the assigned blueprint layer.
   
 + `Name`  
   The layer name  
@@ -140,4 +140,4 @@ An instantiation layer takes care of partitioning a map into smaller clusters. E
 
 ## Execute layers
 
-> You can either execute each layer separately, the complete generation/instantiation stack or all layers together by clicking on the appropriate buttons.
+> You can either execute each layer separately, the complete blueprint/build stack or all layers together by clicking on the appropriate buttons.
