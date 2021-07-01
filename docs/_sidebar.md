@@ -7,5 +7,6 @@
 - [Save and Load](SaveAndLoad.md)
 - [Runtime modification](Runtime.md)
 - [Multiple maps](MultipleMaps.md)
+- [Custom tiles](CustomTiles.md)
 - [Demo scenes](DemoScenes.md)
 - [API](API.md)
