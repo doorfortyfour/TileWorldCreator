@@ -11,11 +11,11 @@ Version 3 has a completely new and more flexible workflow for creating maps base
 > Let's create our first map quickly. We'll skip the details for later.  
 
 ### Create new asset
+1. First create a `TileWorldCreatorAsset` in your project.
+2. Right click in the project window and select: `Create -> TileWorldCreator -> New TileWorldCreator Asset`  
+3. Create a new empty scene and add a new GameObject to your scene.  
+4. Add the TileWorldCreator component to it.  
 ![quickStart0](img/twcQuickStart0.gif)
-First create a `TileWorldCreatorAsset` in your project.
-1. Right click in the project window and select: `Create -> TileWorldCreator -> New TileWorldCreator Asset`  
-2. Create a new empty scene and add a new GameObject to your scene.  
-3. Add the TileWorldCreator component to it.  
 
 ### Assign Asset
 ![quickstart1](img/twcQuickStart1.gif)
