@@ -16,3 +16,4 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 ### Cliff Island
 ### Dungeon
 ### 2D Island
+### Prototype
