@@ -22,7 +22,15 @@ twc.ModifyMap("Island", int _x, int _y);
 + `_y`
   The y position on the map
   
-  
+*Build the map*  
+After modifying the map you need to execute the build layer stack to make sure all changes will be build.  
+This can be done by using following code:
+
+```csharp
+ENTER CODE
+```  
+
+
 ## Clear Map
 To clear the paint layer at runtime simply use:  
  
