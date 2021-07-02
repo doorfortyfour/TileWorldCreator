@@ -8,5 +8,6 @@
 - [Runtime modification](Runtime.md)
 - [Multiple maps](MultipleMaps.md)
 - [Custom tiles](CustomTiles.md)
+- [Custom actions](CustomAction.md)
 - [Demo scenes](DemoScenes.md)
 - [API](API.md)
