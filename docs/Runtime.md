@@ -1,9 +1,9 @@
 # Runtime modification
 In order to modify a map at runtime you'll have to add a paint generator to the layer you wish to modify.
 
-1. Create a new generation layer
-2. Name it
-3. Add a `paint` modifier to the layer
+1. Create a new `blueprint` layer  
+2. Name it: `Island`  
+3. Add a `paint` modifier to the layer  
 
 You can now modify the layer by calling:  
 
@@ -11,11 +11,12 @@ You can now modify the layer by calling:
 // TileWorldCreator component reference
 public TileWorldCreator twc;
 // Modify map
-twc.ModifyMap(string _layerName, int _x, int _y);
+// _x and _y are the map position
+twc.ModifyMap("Island", int _x, int _y);
 ```
     
 + `_layerName`
-  The generation layer name which has the paint modifier you want to modify
+  The blueprint layer name which has the paint modifier you want to modify
 + `_x`
   The x position on the map
 + `_y`
@@ -48,4 +49,4 @@ It copies the last output to the paint modifier.
     ```  
 
 **Example**
-> Please also have a look at the runtime editor demo scene.
+> It is strongly recommended to have a look at the 01_Runtime Editor demo scene.
