@@ -61,28 +61,28 @@ void BuildMap(TileWorldCreator _twc)
 ## Clear Map
 To clear the paint layer at runtime simply use:  
  
-    ```csharp
-    // Clear map
-    twc.FillMap("Island", false);
-    ```  
+```csharp
+// Clear map
+twc.FillMap("Island", false);
+```  
     
 ## Fill Map
 To fill a map use:  
 
-    ```csharp
-    // Fill map
-    twc.FillMap("Island", true);
-    ```  
+```csharp
+// Fill map
+twc.FillMap("Island", true);
+```  
     
 ## Copy Map
 The copy map method works like the editor copy map functionality.
 It copies the last output to the paint modifier.  
 
-    ```csharp
-    // Copy map
-    twc.CopyMap(string _layerName);
-    ```  
+```csharp
+// Copy map
+twc.CopyMap(string _layerName);
+```  
 
-**Example**
+## Runtime editor 
 Please also have a closer look at the `01_Runtime Editor` demo scene.  
 This scene uses all the basic map modifications, and is a great start for creating your own runtime editor.
