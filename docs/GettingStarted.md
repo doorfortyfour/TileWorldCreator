@@ -8,11 +8,11 @@ Version 3 has a completely new and more flexible workflow for creating maps base
 
 ### UPR & HDRP
 To make ours and your lives easier, all Tile preset materials are using the built-in RP.  
-If you're using URP or HDRP you can simply upgrade those materials in your project by selecting: 
-** URP **
-`Edit / Render Pipeline / Universal Render Pipeline / Upgrade Project Materials to UniversalRP Materials`
-** HDRP **
-`Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`
+If you're using URP or HDRP you can simply upgrade those materials in your project by selecting:  
+** URP **  
+`Edit / Render Pipeline / Universal Render Pipeline / Upgrade Project Materials to UniversalRP Materials`  
+** HDRP **  
+`Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`  
 
 ## Quick start
 
