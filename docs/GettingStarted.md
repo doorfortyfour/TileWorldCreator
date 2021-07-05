@@ -29,13 +29,13 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 ![quickstart1](img/twcQuickStart1.gif)
 1. Assign the newly created `TileWorldCreatorAsset` file to the empty slot of the TileWorldCreator component.  
 2. Set the map size to 20x20 for example.  
-3. Click on the `+` button in the generation layers stack to create a new layer.  
+3. Click on the `+` button in the blueprint layers stack to create a new layer.  
 
 ### Add your first generator
 ![quickstart2](img/twcQuickStart2.gif)
 1. Select the layer. 
 2. Name your layer: `Base` and set a color for the preview texture.  
-3. Click on the + button of the layer action stack and select: `Generators / CellularAutomata`  
+3. Click on the `+` button of the layer action stack and select: `Generators / CellularAutomata`  
 4. Click on the execute layer button.  
 5. Nice, TileWorldCreator has generated your first map.  
 
@@ -44,11 +44,11 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 The scene is still quite empty though. Let's instantiate some tiles.  
 ![quickstart3](img/twcQuickStart3.gif)
 
-1. Add an instantiation layer of type `Tiles` to the instantiation stack.  
+1. Add a build layer of type `Tiles` to the build layers stack.  
 2. Name it: Island, for example  
-3. We now have to assign a generation layer to it. Select the `Base` layer.  
-4. Click on `Add Tiles Preset` and assign the cliffs tile preset located in `TileWorldCreator / Tiles / Cliffs`  
-5. Click on `Execute all instantiation layers`  
+3. We now have to assign a blueprint layer to it. Select the `Base` layer.  
+4. Click on `Add Tiles Preset` and assign the cliffs tile preset located in `TileWorldCreator / Tiles / Version 2 Tiles / CliffIsland`  
+5. Click on `Execute all build layers`  
 6. Congratulations your map has been built!  
   
 ![quickstart4](img/twcQuickStart4.gif)  
