@@ -6,6 +6,14 @@ Simply import the package from the package manager. You can move the TileWorldCr
 Tiles made for v2 can be reused for version 3.
 Version 3 has a completely new and more flexible workflow for creating maps based on different generators and modifiers. This allows you to create and modify maps based on "rules". 
 
+### UPR & HDRP
+To make ours and your lives easier, all Tile preset materials are using the built-in RP.  
+If you're using URP or HDRP you can simply upgrade those materials in your project by selecting: 
+** URP **
+`Edit / Render Pipeline / Universal Render Pipeline / Upgrade Project Materials to UniversalRP Materials`
+** HDRP **
+`Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`
+
 ## Quick start
 
 > Let's create our first map quickly. We'll skip the details for later.  
