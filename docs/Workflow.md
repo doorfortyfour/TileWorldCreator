@@ -35,7 +35,7 @@ By referencing the TileWorldCreator component you'll also get access to various 
 
 ![generationLayer](img/generationLayer.png)
 
-TileWorldCreator consists of two different layer stacks. The `Blueprint layers` stack and the `Build layers` stack. Each layer in the blueprint layer stack has its proprieate actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). By combining those actions and layers you can easily create different "parts" of your map.
+TileWorldCreator consists of two different layer stacks. The `Blueprint layers` stack and the `Build layers` stack. Each layer in the blueprint layer stack has its own actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). By combining those actions and layers you can easily create different "parts" of your map.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
@@ -50,7 +50,7 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 ### Actions stack  
 ![actionStack](img/actionStack.png)
-!> Each generation layer executes each action in the action stack from top to bottom.  
+> Each generation layer executes each action in the action stack from top to bottom.  
 
 <br><br>
 **Example for a stack:**  
@@ -70,8 +70,8 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 
 ## Build Layers
-Next we have the instantiation layers stack. These layers are responsible for taking the final output of a generated layer from the generation layers stack and use it to instantiate the tiles or objects.
-> Make sure the generation layers stack has been executed first before trying to execute the instantiation layers. 
+Next we have the build layers stack. Build layers are responsible for taking the final output of a blueprint layer and uses it to instantiate either tiles or objects.
+> Make sure the blueprint layers stack has been executed first before trying to execute the build layers. 
 
 ### Build tiles Layer
 The build tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned blueprint layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
@@ -80,8 +80,8 @@ The build tiles layer takes a TileWorldCreator tiles preset and automatically in
 
 + `Layer Name`  
   The layer name  
-+ `Assigned Layer`  
-  The generated map layer it should use for instantiation  
++ `Blueprint Layer`  
+  The blueprint layer it should use for instantiation  
 + `Global Position offset` `Global scaling offset`  
   Add an additional transform offset to a single tile  
 + `Merge tiles`  
@@ -130,7 +130,7 @@ If this is not desired leave it off.
   Merge the instantiated objects in to clusters.  
 
 ## Merging & Clusters :id=merging
-An instantiation layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the instantiation tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
+A build layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the build tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
 > When creating large maps it is highly recommended to enable merging. 
 
 
