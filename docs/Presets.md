@@ -25,7 +25,17 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 
 ## Version 2
 ### SciFi
+![scifiPreset](img/scifiPreset.png)  
+
 ### Cliff Island
+![cliffIsland](img/cliffIslandPreset.png)  
+
 ### Dungeon
+![dungeonPreset](img/dungeonPreset.png)  
+
 ### 2D Island
+![2dIslandPreset](img/2DIslandPreset.png)  
+
 ### Prototype
+![prototypePreset](img/prototypePreset.png)  
+
