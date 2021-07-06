@@ -28,7 +28,9 @@ Smoothes the map by the smoothness amount.
 The PlayerPosition modifier tries to find the best possible place 
 to spawn a player. This is done by subdividing the map
 in to 9 quadrants and searching for a fill tile in one of these quadrants. 
-The output will be one single tile which can then be used by a object instantiation layer to instantiate the player object. 
+The output will be one single tile which can then be used by a object instantiation layer to instantiate the player object.  
+
+![playerPosition](img/playerPosition.png)  
 
 `TopLeft`  
 `TopCenter`  
@@ -49,7 +51,7 @@ When using the rule type you can define multiple "neighbour" rules. This means t
 
 **Example**  
 So for example if you set a rule like this:  
+![ruleSelection](img/ruleSelection.png)  
 
-This means, only select the tiles which have a neighbour on the left, right, bottom-left, bottom-right and bottom-center. 
-The selection would look like this:  
-
+This means, only select the tiles which have a neighbour on the left, right, bottom-left, bottom-right and bottom-center.  
+So the tile which are orange in the image are being selected now.
