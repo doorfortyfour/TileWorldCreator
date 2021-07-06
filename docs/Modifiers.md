@@ -9,9 +9,6 @@ Add the output of a layer to this layer
 ## Subtract
 Subtract a layer from this layer
 
-## Copy
-Copy a layer in to this layer
-
 ## Expand
 Expand the tile borders by one tile
 
@@ -41,10 +38,10 @@ The output will be one single tile which can then be used by a object instantiat
 `BottomRight`  
 
 ## Select
-This is probably the most powerful modifier as it let's you select different parts of your map. 
+This is probably the most powerful modifier as it let's you select different parts of your map based on the tiles type or based on rules.
 > Combining multiple select modifiers can help extract very specific parts of your map. 
 
-### Select by rules
+#### Select by rules
 You can add multiple rules for each selection type to filter the tiles you really want. 
 Rules are defining how neighbouring tiles should be located for the selected tile. 
 **Example**
