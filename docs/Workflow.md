@@ -50,7 +50,7 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 ### Actions stack  
 ![actionStack](img/actionStack.png)
-> Each generation layer executes each action in the action stack from top to bottom.  
+> Each blueprint layer executes each action in the action stack from top to bottom.  
 
 <br><br>
 **Example for a stack:**  
@@ -63,8 +63,8 @@ So it is always wise to create your `base` map as the first layer and every addi
 
 #### Inner Layer:
 ![innerLayer](img/exampleInnerLayer.png)
-+ `Copy`  
-  copy the base map to the inner layer
++ `Add`  
+  Add the base map to the new inner layer
 + `Shrink`  
   shrink the map by one tile 
 
@@ -91,10 +91,10 @@ The build tiles layer takes a TileWorldCreator tiles preset and automatically in
 + `Tiles Presets`  
   You can assign multiple tiles preset to a single tiles instantiation layer and set a random weight. This is great if you want to add some variety between tile sets.  
 + `Ignore layers`  
-  Ignore layers can be used if you want to skip instantiation for tiles from another generation layer which overlaps with the assigned one.  
+  Ignore layers can be used if you want to skip instantiation for tiles from another blueprint layer which overlaps with the assigned one.  
   **Example:**  
   ![ignoreLayersExample](img/ignoreLayersExample.png)
-  Here we have a map which has two generation layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` instantiation layer. 
+  Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer. 
 
 ### Tiles preset
 ![tilesPreset](img/tilesPreset.png)  
@@ -115,8 +115,8 @@ The build objects layer instantiates single prefabs based on the assigned bluepr
   
 + `Name`  
   The layer name  
-+ `Assigned layer`  
-  The generation layer it should use for instantiation  
++ `Blueprint layer`  
+  The blueprint layer it should use for instantiation  
 + `Use subdivided map`  
 If true, objects will be placed similiar to tiles by using the subdivided map. That means for a 1x1 cell it will place 2x2 objects.  
 If this is not desired leave it off.  
