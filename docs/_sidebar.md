@@ -10,4 +10,6 @@
 - [Custom tiles](CustomTiles.md)
 - [Custom actions](CustomAction.md)
 - [Demo scenes](DemoScenes.md)
-- [API](API.md)
+- [API]
+    - [TileWorldCreator](TileWorldCreatorAPI.md)
+    - [Events](EventsAPI.md)
