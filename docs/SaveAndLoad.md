@@ -20,20 +20,26 @@ To build the map after loading, make sure to subscribe to the OnBlueprintLayersC
 
 public TileWorldCreator twc;
 
+// Subscribe to the event
 public void OnEnable()
 {
     twc.OnBlueprintLayersComplete += BuildMap;
 }
 
-void BuildMap(TileWorldCreator _twc)
-{
-    _twc.ExecuteAllBuildLayers(false);
-}
 
+
+// 1. First, load the map and execute the blueprint stack
 void LoadMap()
 {
     var _path = Application.streamingAssetsPath + "/myMap.json";
     twc.LoadBlueprintStackAndExecute(_path);
+}
+
+// 2. Second, blueprint generation is complete we can now execute all build layers.
+// This is called by the event OnBlueprintLayersComplete
+void BuildMap(TileWorldCreator _twc)
+{
+    _twc.ExecuteAllBuildLayers(false);
 }
 
 ```
