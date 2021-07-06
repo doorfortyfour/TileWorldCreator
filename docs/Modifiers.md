@@ -42,10 +42,14 @@ This is probably the most powerful modifier as it let's you select different par
 > Combining multiple select modifiers can help extract very specific parts of your map. 
 
 #### Select by rules
-You can add multiple rules for each selection type to filter the tiles you really want. 
-Rules are defining how neighbouring tiles should be located for the selected tile. 
+When using the rule type you can define multiple "neighbour" rules. This means that the selection modifier checks for each tile if the rule applies to it this tile.
+
 **Example**
-Let's assume we only want to select the top tiles of a map. 
+So for example if you set a rule like this:
+
+This means, only select the tiles which have a neighbour on the left, right, bottom-left, bottom-right and bottom-center. 
+The selection would look like this:
+
 
 
 ## Smooth
