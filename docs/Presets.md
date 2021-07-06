@@ -5,11 +5,23 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 
 ## Version 3
 ### Roads
+![roadPreset](img/roadPreset.png)  
+
 ### House
+![housePreset](img/housePreset.png)  
+
 ### Park
+![parkPreset](img/parkPreset.png)  
+
 ### Walls
+![wallsPreset](img/wallsPreset.png)  
+
 ### Platformer
+![platformerPreset](img/platformerPreset.png)  
+
 ### Block
+![blockPreset](img/blockPreset.png)  
+
 
 ## Version 2
 ### SciFi
