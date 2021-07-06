@@ -6,5 +6,4 @@ To make sure that another instance of a TileWorldCreator component doesn't use t
 to change the `World name` on the TileWorldCreator component. 
 
 ## Transforms
-
-A map can be moved by the transforms of the game object where the TileWorldCreator component is assigned to.
+A map uses the position (x, z or x, y) from the TileWorldCreator component gameobject in the scene.
