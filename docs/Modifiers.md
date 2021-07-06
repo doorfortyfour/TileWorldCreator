@@ -19,7 +19,10 @@ Shrink the tile borders by one tile
 Invert the map
 
 ## Offset
-Offset the map result by the offset amount
+Offset the map result by the offset amount  
+
+## Smooth
+Smoothes the map by the smoothness amount.  
 
 ## PlayerPosition
 The PlayerPosition modifier tries to find the best possible place 
@@ -42,15 +45,11 @@ This is probably the most powerful modifier as it let's you select different par
 > Combining multiple select modifiers can help extract very specific parts of your map. 
 
 #### Select by rules
-When using the rule type you can define multiple "neighbour" rules. This means that the selection modifier checks for each tile if the rule applies to it this tile.
+When using the rule type you can define multiple "neighbour" rules. This means that the selection modifier checks for each tile if the rule applies to it this tile.  
 
-**Example**
-So for example if you set a rule like this:
+**Example**  
+So for example if you set a rule like this:  
 
 This means, only select the tiles which have a neighbour on the left, right, bottom-left, bottom-right and bottom-center. 
-The selection would look like this:
+The selection would look like this:  
 
-
-
-## Smooth
-Smoothes the map by the smoothness amount. 
