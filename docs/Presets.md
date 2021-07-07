@@ -22,7 +22,7 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 
 ### Walls
 ![wallsPreset](img/wallsPreset.png)  
-![walls](img/walls_01.png)  
+![walls](img/wallsPreset.gif)  
 
 ### Platformer
 ![platformerPreset](img/platformerPreset.png)  
