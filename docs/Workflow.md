@@ -86,8 +86,14 @@ The build tiles layer takes a TileWorldCreator tiles preset and automatically in
   Add an additional transform offset to a single tile  
 + `Merge tiles`  
   Merge tiles in to clusters  
-+ `Add mesh collider`  
-  Add a mesh collider to the merged mesh
++ `Collision type`  
+  Select between **none**, ** Mesh Collider ** and **Tile Collider**
+  + None: Do not add any collision
+  + Mesh Collider: Add the exact merged tile mesh as a mesh collider
+  + Tile Collider: Generate a new mesh collider based on the tiles bounding box.
+    `Collider height` The collider height.
+    `Collider border offset` Add a border offset to the collision mesh, this is sometimes needed if border tiles do not "fill" the whole cell.
+  
 + `Tiles Presets`  
   You can assign multiple tiles preset to a single tiles instantiation layer and set a random weight. This is great if you want to add some variety between tile sets.  
 + `Ignore layers`  
