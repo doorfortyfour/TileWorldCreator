@@ -154,45 +154,49 @@ The map modifier value. True = add tile, False = remove tile
 FillMap(string layerName, bool value);
 ```
 
+Fill paint map by the value (true or false)  
+
++ `layerName`  
+The blueprint layer name with the paint generator  
++ `value`  
+The value (true or false)  
+
+## CopyMap
+```csharp
+CopyMap(string layerName);
+```
+Copies the last map output and adds it to the paint modifier so that it can be modified manually.
+
++ `layerName`  
+The blueprint layer name with the paint generator  
+
+## GetAction
+```csharp
+TWCBlueprintAction GetAction(string layerName, string guid);
+TWCBlueprintAction GetAction(string layerName, int layerIndex);
+```
+Get an action from the blueprint layer stack by its guid or layer index
+
++ `layerName`  
+The blueprint layer name  
++ `guid` or `layerIndex`  
+The unique guid of the action or the layer index  
+
+## SetCustomRandomSeed
+```csharp
+SetCustomRandomSeed(int seed);
+```
+
+Set a custom random seed for the map generation.  
+When setting a custom random seed the random seed also gets activated. Use DisableCustomRandomSeed, to disable it again.
+
++ `seed`  
+The custom random seed  
 
 
+## DisableCustomRandomSeed
+```csharp
+DisableCustomRandomSeed();
+```
 
-### GetMapOutputFromLayer
-
-### GetTileData(string layername, Vector3 position)
-Returns the tile data located at the position.
-
-## Save & Load
-
-### SaveLayerStack (string path)
-
-### LoadLayerStackAndExecuteGeneration(string path)
-
-### LoadLayerStack(string path)
-
-## Execution
-
-### ExecuteAllGenerationLayers
-
-### ExecuteGenerationLayer(string layername)
-
-### ExecuteAllInstantiationLayers
-
-### UpdatePreviewTexture
-
-### ModifyMap
-### FillMap
-### CopyMap
-
-### GetAction(string layername, string guid)
-
-### GetAction(string layername, int stackindex)
-
-## Events
-
-### OnGenerationComplete
-### OnInstantiationComplete
-
-
-# TileWorldCreatorWorldData
-
+Disable custom random seed
