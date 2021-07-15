@@ -14,8 +14,8 @@ using TWC
   Returns the final generated map from a blueprint layer as a WorldMap class.  
   The WorldMap class contains the `worldPartitionTiles` dictionary which contains
   all generated data from the map.  
-  **Params**  
-  `guid`  
+
+  + `guid`  
   The layer unique guid or layer name as string
   
 ## GetMapOutputFromBlueprintLayer
