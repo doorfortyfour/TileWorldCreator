@@ -18,7 +18,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 
 > Let's create our first map quickly. We'll skip the details for later.  
 
-[![QuickStartVideo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![QuickStartVideo](https://img.youtube.com/vi/6mMyW7UfTVk/0.jpg)](https://www.youtube.com/watch?v=6mMyW7UfTVk)
 
 ### Create new asset
 1. First create a `TileWorldCreatorAsset` in your project.
