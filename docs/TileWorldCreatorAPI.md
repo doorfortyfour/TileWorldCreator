@@ -17,7 +17,8 @@ using TWC
 
   + `guid`  
   The layer unique guid or layer name as string
-  
+
+
 ## GetMapOutputFromBlueprintLayer
 
 ```csharp
@@ -93,7 +94,7 @@ Execute single blueprint layer specified by name.
 The blueprint layer name  
 
 
-### ExecuteBuildLayer
+## ExecuteBuildLayer
 ```csharp
 ExecuteBuildLayer(string layerName, bool forceRebuild);
 ```
