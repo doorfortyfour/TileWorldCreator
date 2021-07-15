@@ -109,6 +109,10 @@ The build tiles layer takes a TileWorldCreator tiles preset and automatically in
 ![tilesPreset](img/tilesPreset.png)  
 Tiles are stored in a separate asset file (scriptable object). This has the advantage of being able to reuse tile presets 
 in different TileWorldCreator assets.
+
+  + `Rotation offset` Depending on how your tiles have been created in your 3D software, you will have to add a rotation offset.
+  + `Scaling offset` Add a scaling offset to a single tile. Often used when changing the cell size (!=1)
+
 #### Create a Tiles Preset
 1. Right click in the project view and select `Create / TileWorldCreator / New TileWorldCreator Tiles preset`
 2. Assign your tiles based on their type 
