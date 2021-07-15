@@ -15,13 +15,16 @@ Each blueprint layer, including its generators and modifiers, handles a map by i
 The TileWorldCreator component is the main component and is responsible for executing the blueprint and build layer stacks.
 By referencing the TileWorldCreator component you'll also get access to various runtime methods.
 
++ `World name`  
+  The name of the world game object where all layers, clusters and tiles are being parented.  
+  Use different names if you have multiple TileWorldCreator components in one scene.  
 + `Map width` `Map height`  
   The size of the map
 + `Cell size`  
   The size of a single cell  
 + `Map orientation`  
   The orientation of the map in the world (XZ or XY)  
-+ `Use random seed`  
++ `Custom random seed`  
   When enabled you can set a custom random seed which will be used for generating the map  
 + `Merge preview textures`  
   When enabled, the preview thumbnail textures will be merged with the preview texture from the last layer.  
