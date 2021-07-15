@@ -98,7 +98,7 @@ The build tiles layer takes a TileWorldCreator tiles preset and automatically in
     `Collider border offset` Add a border offset to the collision mesh, this is sometimes needed if border tiles do not "fill" the whole cell.  
   
 + `Tiles Presets`  
-  You can assign multiple tiles preset to a single tiles instantiation layer and set a random weight. This is great if you want to add some variety between tile sets.  
+  You can assign multiple tiles preset to a single tiles build layer and set a random weight. This is great if you want to add some variety between tile sets.  
 + `Ignore layers`  
   Ignore layers can be used if you want to skip instantiation for tiles from another blueprint layer which overlaps with the assigned one.  
   **Example:**  
@@ -145,4 +145,5 @@ A build layer takes care of partitioning a map into smaller clusters. Each clust
 
 ## Execute layers
 
-> You can either execute each layer separately, the complete blueprint/build stack or all layers together by clicking on the appropriate buttons.
+You can either execute each layer separately, the complete blueprint/build stack or all layers together by clicking on the appropriate buttons.
+> Hold the Left-CTRL key while clicking on one of these buttons to force a complete rebuild of the map.
