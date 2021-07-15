@@ -8,7 +8,7 @@ OnBlueprintLayersComplete(TileWorldCreator tileWorldCreator);
 Called after `ExecuteAllBlueprintLayers` or `ExecuteBlueprintLayer`  
 
 **Example**  
-```chsarp
+```csharp
   // Subscribe to event
   void OnEnable()
   {
