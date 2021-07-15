@@ -1,20 +1,41 @@
 # API
 
-### GetGeneratedMap
+```csharp
+// Namespace
+using TWC
+```
+
+### GetGeneratedBlueprintMap
   
   ```csharp
-  public TileWorldCreator twc;
-  TileWorldCreatorPartitioning generatedMap = twc.GetGeneratedMap(string guid);
+  WorldMap GetGeneratedBlueprintMap(string guid);
   ```  
   
-  Returns the final generated map from a layer as a TileWorldCreatorPartitioning class.  
-  The TileWorldCreatorPartitioning class contains the `worldPartitionTiles` dictionary which contains
-  all generated information about the map.
+  Returns the final generated map from a blueprint layer as a WorldMap class.  
+  The WorldMap class contains the `worldPartitionTiles` dictionary which contains
+  all generated data from the map.  
   
-### GetMapOutputFromLayer (string layername)
-Return the final generated map from a layer as a bool array.
+  `guid`  
+  The layer unique guid or layer name as string
+  
+### GetMapOutputFromBlueprintLayer
 
-### GetMapOutputFromLayer (Guid guid)
+```csharp
+bool[,] GetMapOutputFromBlueprintLayer(string layerName)
+```
+
+Return the final generated map from a blueprint layer as a bool array.  
+
+`layerName`  
+The blueprint layer name
+
+
+
+
+
+
+
+### GetMapOutputFromLayer
 
 ### GetTileData(string layername, Vector3 position)
 Returns the tile data located at the position.
