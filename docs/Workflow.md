@@ -114,7 +114,7 @@ in different TileWorldCreator assets.
   + `Scaling offset` Add a scaling offset to a single tile. Often used when changing the cell size (!=1)
 
 #### Create a Tiles Preset
-1. Right click in the project view and select `Create / TileWorldCreator / New TileWorldCreator Tiles preset`
+1. Right click in the project view and select `Create / TileWorldCreator / New 3D Tiles preset`
 2. Assign your tiles based on their type 
 + ![edgeTile](img/edgeTile.png) `Edge`  
 + ![exteriorCornerTile](img/exteriorCornerTile.png) `Exterior Corner`    
