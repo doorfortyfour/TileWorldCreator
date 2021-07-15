@@ -44,11 +44,11 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 The scene is still quite empty though. Let's instantiate some tiles.  
 ![quickstart3](img/twcQuickStart3.gif)
 
-1. Add a build layer of type `Tiles` to the build layers stack.  
+1. Add a build layer of type `3D Tiles` to the build layers stack.  
 2. Name it: Island, for example  
-3. We now have to assign a blueprint layer to it. Select the `Base` layer.  
+3. Let's assign a blueprint layer to it. Select the `Base` layer.  
 4. Click on `Add Tiles Preset` and assign the cliffs tile preset located in `TileWorldCreator / Tiles / Version 2 Tiles / CliffIsland`  
-5. Click on `Execute all build layers`  
+5. Click on `Execute all build layers` or on the `Play` button on the layer.  
 6. Congratulations your map has been built!  
   
 ![quickstart4](img/twcQuickStart4.gif)  
