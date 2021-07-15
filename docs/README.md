@@ -1,5 +1,5 @@
 <!-- TODO: Update with your values. -->
-<div style="text-align:center"><img src="img/logo.png" />
+<div style="text-align:center"><img src="img/title.png" />
 
 ### TileWorldCreator documentation
 
