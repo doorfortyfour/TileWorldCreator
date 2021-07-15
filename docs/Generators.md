@@ -15,8 +15,9 @@ BSP Dungeon generates dungeon like maps based on the BSP algorithm.
 ## L-System
 ![lsystem](img/lsystem.gif)  
 The L-System generator is great for creating road like networks or similiar looking maps.
-
-More
+This algorithm uses string based rules.  
+Read more about L-Systems here:  
+![Link](https://www.sidefx.com/docs/houdini/nodes/sop/lsystem.html)
 
 ## Maze
 ![maze](img/maze.gif)  
