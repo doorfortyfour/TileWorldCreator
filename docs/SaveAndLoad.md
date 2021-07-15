@@ -1,9 +1,9 @@
 # Save and load
-### Editor
+## Editor
 To save and load a map in the editor simply click on the ... button in the top right corner of the TileWorldCreator component.  
 ![saveload](img/saveLoad.png)  
 
-### Runtime
+## Runtime
 You can save and load a map at runtime using following code:
 > Make sure to have a reference to the TileWorldCreator component in the scene.  
 ```csharp
