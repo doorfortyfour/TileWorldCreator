@@ -79,7 +79,7 @@ Next we have the build layers stack. Build layers are responsible for taking the
 ### Build tiles Layer
 The build tiles layer takes a TileWorldCreator tiles preset and automatically instantiates the tiles based on the assigned blueprint layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
-![instantiationLayerTiles](img/instantiationLayerTiles.png)
+![instantiationLayerTiles](img/buildLayer.png)
 
 + `Layer Name`  
   The layer name  
