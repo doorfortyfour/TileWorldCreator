@@ -21,7 +21,7 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 ![parkGif](img/parkPreset.gif)  
 
 ### Walls
-![wallsPreset](img/wallsPreset.png)  
+![wallsPreset](img/roomsPreset.png)  
 ![walls](img/wallsPreset.gif)  
 
 ### Platformer
@@ -37,7 +37,7 @@ TileWorldCreator version 3 comes with several ready to use tile presets.
 ![scifiPreset](img/scifiPreset.png)  
 
 ### Cliff Island
-![cliffIsland](img/cliffIslandPreset.png)  
+![cliffIsland](img/cliffPreset.png)  
 
 ### Dungeon
 ![dungeonPreset](img/dungeonPreset.png)  
