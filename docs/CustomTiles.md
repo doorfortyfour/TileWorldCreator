@@ -7,4 +7,4 @@ When creating your own tiles for TileWorldCreator, you have to make sure that th
 + The pivot must be centered  
 + If you want to create a "2D" map, you can also use the unity default quad object (GameObject -> 3D Object -> Quad). Then you only have to assign your textures to it.
 
-![requirements](img/tilesrequirements.jpg)
+![requirements](img/tilesrequirements.png)
