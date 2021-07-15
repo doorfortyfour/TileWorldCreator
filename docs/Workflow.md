@@ -36,13 +36,13 @@ By referencing the TileWorldCreator component you'll also get access to various 
 
 ## Blueprint Layers
 
-![generationLayer](img/generationLayer.png)
+![blueprintLayer](img/blueprintLayer.png)
 
 TileWorldCreator consists of two different layer stacks. The `Blueprint layers` stack and the `Build layers` stack. Each layer in the blueprint layer stack has its own actions stack. These actions are called `generators` (cellular automata, maze, L-System etc.) or `modifiers` (copy, expand, smooth etc.). By combining those actions and layers you can easily create different "parts" of your map.
 TileWorldCreator executes the layers including their generators and modifiers from top to bottom.
 So it is always wise to create your `base` map as the first layer and every additional modifications which depends on the `base` layer comes after it.
 
-![generationLayer](img/exampleBaseLayer.png)
+![blueprintLayer](img/exampleBaseLayer.png)
 
 + `Layer Name`  
   The actual layer name  
