@@ -13,6 +13,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 TileWorldCreator does currently not support the official Unity 2D workflow (2D sprites & Tilemaps).  
 But you can still use it for your 2D game, by using quad meshes with a textures on it as your 2D tiles.  
 TileWorldCreator also supports XZ and XY map orientation.  
+Support for 2D sprite and Tilemaps is currently under research.  
 
 ## How do I add ramps?
 To add ramps you will usually have two blueprint layers. One is your base layer which will be used by your normal tileset without ramps. 
