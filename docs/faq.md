@@ -21,7 +21,7 @@ Support for 2D sprite and Tilemaps is currently under research.
 ## How do I add ramps?
 There are multiple ways of adding ramps. Either by adding a second tileset with ramps and randomly choose between the base tileset and the ramps tileset,  
 or by adding single ramp objects by using a build objects layer.  
-Please have a look at the 09_Ramps demo scene.  
+> Please have a look at the 09_Ramps demo scene, where both methods are being used.  
 
 
 ## Does TileWorldCreator require API .Net 4.x like version 2.0?
