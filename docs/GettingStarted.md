@@ -39,8 +39,9 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 2. Name your layer: `Base` and set a color for the preview texture.  
 3. Click on the `+` button of the layer action stack and select: `Generators / CellularAutomata`  
 4. Click on the execute layer button.  
-5. Nice, TileWorldCreator has generated your first map.  
+5. TileWorldCreator has generated your first map.  
 
+> TileWorldCreator executes all layers and their corresponding action stack from top to bottom.
 
 ### Instantiate tiles
 The scene is still quite empty though. Let's instantiate some tiles.  
