@@ -19,15 +19,9 @@ TileWorldCreator also supports XZ and XY map orientation.
 Support for 2D sprite and Tilemaps is currently under research.  
 
 ## How do I add ramps?
-To add ramps you will usually have two blueprint layers. One is your base layer which will be used by your normal tileset without ramps. 
-And the second blueprint layer defines where the ramp tiles should be placed.
-Then add two build layers. The first build layer contains the normal tileset and the second contains the tileset with the ramps.
-It is important that you add the second blueprint layer to the `ignore layers` of the first build layer.  
-**Example**  
-  1. Add two blueprint layers. (`Base` & `Ramps`)  
-  2. Add two build layers.  
-  3. First build layer: Set normal tileset and add ignore layer `Ramps`  
-  4. Second build layer: Set ramp tileset.  
+There are multiple ways of adding ramps. Either by adding a second tileset with ramps and randomly choose between the base tileset and the ramps tileset,  
+or by adding single ramp objects by using a build objects layer.  
+Please have a look at the 09_Ramps demo scene.  
 
 
 ## Does TileWorldCreator require API .Net 4.x like version 2.0?
