@@ -6,10 +6,10 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 
 + URP  
   `Edit / Render Pipeline / Universal Render Pipeline / Upgrade Project Materials to UniversalRP Materials`
-+ HDRP
++ HDRP  
   `Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`
 
-## Can I use tileworld reactor for my 2d game?
+## Can I use TileWorldCreator for my 2d game?
 TileWorldCreator does currently not support the official Unity 2D workflow (2D sprites & Tilemaps).  
 But you can still use it for your 2D game, by using quad meshes with a textures on it as your 2D tiles.  
 TileWorldCreator also supports XZ and XY map orientation.  
@@ -26,9 +26,12 @@ It is important that you add the second blueprint layer to the `ignore layers` o
   4. Second build layer: Set ramp tileset.  
 
 
-## Does tileworld reactor require api. Net 4.x stamdard like version 2.0?
+## Does TileWorldCreator require api. Net 4.x stamdard like version 2.0?
 No TileWorldCreator v.3 doesn't require API level .Net 4.x  
 
 ## Can I have more than one map in a scene?
 Yes absolutely. Simply make sure to define an unique `World name` in the TileWorldCreator component.  
+
+## Is the source code included?
+Yes.
 
