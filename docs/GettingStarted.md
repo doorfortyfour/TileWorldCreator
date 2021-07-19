@@ -42,6 +42,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 5. TileWorldCreator has generated your first map.  
 
 > TileWorldCreator executes all layers and their corresponding action stack from top to bottom.
+![executionOrder](img/executionOrder.png)
 
 ### Instantiate tiles
 The scene is still quite empty though. Let's instantiate some tiles.  
