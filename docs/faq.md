@@ -26,7 +26,7 @@ It is important that you add the second blueprint layer to the `ignore layers` o
   4. Second build layer: Set ramp tileset.  
 
 
-## Does TileWorldCreator require api. Net 4.x stamdard like version 2.0?
+## Does TileWorldCreator require API .Net 4.x like version 2.0?
 No TileWorldCreator v.3 doesn't require API level .Net 4.x  
 
 ## Can I have more than one map in a scene?
