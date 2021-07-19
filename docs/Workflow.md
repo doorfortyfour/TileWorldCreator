@@ -56,7 +56,7 @@ So it is always wise to create your `base` map as the first layer and every addi
 > Each blueprint layer executes each action in the action stack from top to bottom.  
 
 <br><br>
-**Example for a stack:**  
+### Action stack example
 #### Base Layer:
 ![baseLayer](img/exampleBaseLayer.png)
 + `Cellular Automata`  
