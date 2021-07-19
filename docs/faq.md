@@ -9,6 +9,9 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 + HDRP  
   `Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`
 
+## Nothing happens when I press the execute buttons?
+Try holding the Left-CTRL key while clicking on the execute button to force a complete rebuild of the map.  
+
 ## Can I use TileWorldCreator for my 2d game?
 TileWorldCreator does currently not support the official Unity 2D workflow (2D sprites & Tilemaps).  
 But you can still use it for your 2D game, by using quad meshes with a textures on it as your 2D tiles.  
