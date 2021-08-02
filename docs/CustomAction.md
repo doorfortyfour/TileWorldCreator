@@ -61,7 +61,7 @@ You can also find this class in the TileWorldCreator folder under: `TileWorldCre
               return map;
         }
 
-          #if UNITY_EDITOR
+        #if UNITY_EDITOR
         // Custom gui for this action
         public override void DrawGUI(Rect _rect, int _layerIndex, TileWorldCreator _twc)
         {
@@ -75,7 +75,8 @@ You can also find this class in the TileWorldCreator folder under: `TileWorldCre
             GUI.Label(guiLayout.rect, "Hello World");
           }
         }
-
+        #endif
+        
         // Must be implemented when using a custom gui.
         // Here we're returning the height of the guiLayout.
         public float GetGUIHeight()
@@ -86,10 +87,10 @@ You can also find this class in the TileWorldCreator folder under: `TileWorldCre
           }
           else
           {
-            return EditorGUIUtility.singleLineHeight;
+            // Return default single line height
+            return 18;
           }
         }
-        #endif
       }
     }
 
