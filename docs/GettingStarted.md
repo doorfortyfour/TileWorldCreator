@@ -16,7 +16,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 
 ## Quick start
 
-> Let's create our first map quickly. We'll skip the details for later.  
+> Let's create our first map.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cscc5_BeY58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -35,7 +35,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 
 ### Add your first generator
 ![quickstart2](img/twcQuickStart2.gif)
-1. Select the layer. 
+1. Select the new blueprint layer. 
 2. Name your layer: `Base` and set a color for the preview texture.  
 3. Click on the `+` button of the layer action stack and select: `Generators / CellularAutomata`  
 4. Click on the execute layer button.  
