@@ -21,7 +21,7 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cscc5_BeY58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Create new asset
-1. First create a `TileWorldCreatorAsset` in your project.
+1. First create a `TileWorldCreatorAsset` in your project.  
    Right click in the project window and select: `Create -> TileWorldCreator -> New TileWorldCreator Asset`  
 2. Create a new empty scene and add a new GameObject to your scene.  
 3. Add the TileWorldCreator component to it.  
