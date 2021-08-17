@@ -29,8 +29,8 @@ which creates a road like map structure.
 + **08 2D Island**  
   Demonstrates the 2D Island preset and how you can use TileWorldCreator for 2D games.
   
-+ **09 Ramps**
++ **09 Ramps**  
 This demo demonstrates how to add custom tiles like ramps on specific positions.
   
-+ **10 Generate by Texture**
++ **10 Generate by Texture**  
 This demo scene demonstrates the use of the texture generator and how you can assign a texture by script during runtime.
