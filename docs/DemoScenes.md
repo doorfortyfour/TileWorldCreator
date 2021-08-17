@@ -22,8 +22,15 @@ which creates a road like map structure.
 + **06 Cliff Island**  
   Demonstrates the cliff island preset.
 
-+ **07 Dungeon**  
-  Demonstrates the dungeon preset with additional object instantiation.
++ **07 Dungeon & 07 Dungeon Game**  
+  Demonstrates the dungeon preset with additional object instantiation.  
+  The dungeon game demo scene demonstrates a simple game with the use of player start and end position.  
 
 + **08 2D Island**  
   Demonstrates the 2D Island preset and how you can use TileWorldCreator for 2D games.
+  
++ **09 Ramps**
+This demo demonstrates how to add custom tiles like ramps on specific positions.
+  
++ **10 Generate by Texture**
+This demo scene demonstrates the use of the texture generator and how you can assign a texture by script during runtime.
