@@ -39,3 +39,12 @@ The paint generator allows you to easily paint a map in the scene view.
 3. In the scene view you can now start adding or removing tiles by holding Left Ctrl key and holding the left or right mouse button. 
 ![paintSceneView](img/paintSceneView.png)  
 4. When enabling the paint layer, the scene view registers the paint layer and allows you to easily enable / disable the paint layer from the scene view. 
+
+## Circle
+![circle](img/circle.png)  
+The circle generator generates a simple circle shape from a random or fixed position.
+
+## Texture
+![textureGenerator](img/TextureGenerator.png)  
+The texture generator generates a map based on a texture2d. You can also set this texture by script during runtime. Please have a look at the `10_GeneratyByTexture` demo scene  
+![textureGeneratorDemo](img/TextureGeneratorDemo.gif)
