@@ -64,7 +64,7 @@ You can also find this class in the TileWorldCreator folder under: `TileWorldCre
         #if UNITY_EDITOR
         // Custom gui for this action
         public override void DrawGUI(Rect _rect, int _layerIndex, TileWorldCreatorAsset _asset, TileWorldCreator _twc)
-		{
+	{
           // Use the guiLayout to make sure the gui is drawn correctly in the reorderable list
           using (guiLayout = new TWCGUILayout(_rect))
           {
