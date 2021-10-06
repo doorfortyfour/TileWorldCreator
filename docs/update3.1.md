@@ -7,12 +7,12 @@ This is an important notice regarding the new update 3.1 as it contains possible
 ## What does it mean?  
 Before 3.1: A generated map has always been subdivided to make sure that single cells would not result in "unclosed" maps. A map therefore was always twice the size of the actual map size which has been set in the settings. See image below:  
 ![old4Tiles](img/oldMapSubdivision.png)  
-  
-?> A cell size set to 1 meant an actual cell size of 2x2 unity units (because of the subdivision). Since 3.1 this isn't the case anymore. the subdivided map for a 4-Tiles build layer is now the same size as the actual map size set in the settings because a subdivided map now subdivides the cell size as well. Meaning that a single tiles prefab in a 4-Tiles build is now half the size of the actual cell size.
-![new4Tiles](img/new4Tiles.png)
-![new6Tiles](img/new6Tiles.png)
 
-### 6-Tiles  
+## NEW
+?> A cell size set to 1 meant an actual cell size of 2x2 unity units (because of the subdivision). Since 3.1 this isn't the case anymore. the subdivided map for a 4-Tiles build layer is now the same size as the actual map size set in the settings because a subdivided map now subdivides the cell size as well. Meaning that a single tiles prefab in a 4-Tiles build is now half the size of the actual cell size.  
+  
+![new4Tiles](img/new4Tiles.png)  
+![new6Tiles](img/new6Tiles.png)   
 A 6-Tiles build layer can handle tiles with one or less adjacent tiles. Therefore it doesn't need a subdivided map. 
   
 To prevent confusion with the cell size and to support both 4 and 6 Tiles simultaneously the cell size matches the Unity grid and isn't actually double the size now. 
