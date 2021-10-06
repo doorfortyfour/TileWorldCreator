@@ -30,7 +30,7 @@ Some smaller changes regarding the runtime editor has been made. Basically when 
 ## API  
 New 
 ```csharp
-ExecuteAllBuildLayers(string priorityBuildLayerName, bool forceRebuild)**  
+ExecuteAllBuildLayers(string priorityBuildLayerName, bool forceRebuild)  
 ```  
 Setting a build layer as priority will make sure that this build layer will be updated first. This is useful if you want to make sure the response time is as fast as possible. 
 The new "Anno" like Demo scene makes use of this feature and sets the currently selected layer as the priority layer. 
