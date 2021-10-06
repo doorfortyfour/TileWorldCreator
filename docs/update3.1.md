@@ -19,7 +19,7 @@ To prevent confusion with the cell size and to support both 4 and 6 Tiles simult
 Additionally both 4 and 6-Tiles build layers now have an option to scale the tiles based on the cell size. This only works reliable if your prefab tiles are the size of 1x1 unit. 
   
 ## What can I do?  
-If you encounter that your map size is only half the size as before the update, you can either **set the cell size to: 2**
+If you encounter that your map size is only half the size as before the update, you can either **set the cell size to: 2**  
 Or increase the map size by two and **enable automatic grid size scaling** in the build layers. 
 Doing this will change the overall look of the map though. (smaller tiles)
 
