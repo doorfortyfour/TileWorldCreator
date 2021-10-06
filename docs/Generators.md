@@ -51,7 +51,7 @@ The texture generator generates a map based on a texture2d. You can also set thi
 ![textureGeneratorDemo](img/TextureGeneratorDemo.gif)  
   
 ## Dot grid  
-![dogGrid](img/dotGrid.png)
+![dogGrid](img/dotGrid.png)  
 Generates a dot grid  
   
 ## Checkerboard  
