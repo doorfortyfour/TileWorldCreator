@@ -9,7 +9,7 @@ Before 3.1: A generated map has always been subdivided to make sure that single 
 ![old4Tiles](img/oldMapSubdivision.png)  
 
 ## NEW
-?> A cell size set to 1 meant an actual cell size of 2x2 unity units (because of the subdivision). Since 3.1 this isn't the case anymore. the subdivided map for a 4-Tiles build layer is now the same size as the actual map size set in the settings because a subdivided map now subdivides the cell size as well. Meaning that a single tiles prefab in a 4-Tiles build is now half the size of the actual cell size.  
+?> A cell size set to 1 meant an actual cell size of 2x2 unity units (because of the subdivision). Since 3.1 this isn't the case anymore. The subdivided map for a 4-Tiles build layer is now the same size as the actual map size set in the settings. A subdivided map now subdivides the cell size as well. Meaning that a single tiles prefab in a 4-Tiles build is now half the size of the actual cell size.  
   
 ![new4Tiles](img/new4Tiles.png)  
 ![new6Tiles](img/new6Tiles.png)   
@@ -28,6 +28,9 @@ Doing this will change the overall look of the map though. (smaller tiles)
 Some smaller changes regarding the runtime editor has been made. Basically when modifying a map at runtime, you don't have to divide the cell position by two anymore. 
   
 ## API  
-New **ExecuteAllBuildLayers(string priorityBuildLayerName, bool forceRebuild)**  
+New 
+```csharp
+ExecuteAllBuildLayers(string priorityBuildLayerName, bool forceRebuild)**  
+```  
 Setting a build layer as priority will make sure that this build layer will be updated first. This is useful if you want to make sure the response time is as fast as possible. 
 The new "Anno" like Demo scene makes use of this feature and sets the currently selected layer as the priority layer. 
