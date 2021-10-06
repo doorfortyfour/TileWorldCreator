@@ -2,7 +2,7 @@
 
 This is an important notice regarding the new update 3.1 as it contains possible breaking changes for users using TWC prior to version 3.1.
 
-Due to the new 6-Tiles build support and changes with the cell size behavior it may happen that your map size is now half the size as before. Meaning, it now basically has the correct size in unity units.  
+!> Due to the new 6-Tiles build support and changes with the cell size behavior it may happen that your map size is now half the size as before. Meaning, it now basically has the correct size in unity units.  
   
 ## What does it mean?  
 Before 3.1: A generated map has been always subdivided while keeping the tile size to 1x1, meaning that a map always was double the size of the actual map size which has been set in the settings. See image:
