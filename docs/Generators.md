@@ -48,4 +48,13 @@ The circle generator generates a simple circle shape from a random or fixed posi
 ![textureGenerator](img/TextureGenerator.png)  
 The texture generator generates a map based on a texture2d. You can also set this texture by script during runtime. Please have a look at the `10_GeneratyByTexture` demo scene  
   
-![textureGeneratorDemo](img/TextureGeneratorDemo.gif)
+![textureGeneratorDemo](img/TextureGeneratorDemo.gif)  
+  
+## Dot grid  
+![dogGrid](img/dotGrid.png)
+Generates a dot grid  
+  
+## Checkerboard  
+![checkerboard](img/checkerboard.png)  
+Generates a checkerboard like grid  
+  
