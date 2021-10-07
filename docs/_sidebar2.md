@@ -5,7 +5,7 @@
 - [Blueprint Layers](BlueprintLayers.md)
 - [Build Layers](BuildLayers.md)
 - [Tiles Preset](TilesPreset.md)
-- [Merging & Clusts](MergingAndClusters.md)
+- [Merging & Clusters](MergingAndClusters.md)
 - [Generators](Generators.md)
 - [Modifiers](Modifiers.md)
 - [Presets](Presets.md)
