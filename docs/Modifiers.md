@@ -21,6 +21,9 @@ Invert the map
 ## Offset
 Offset the map result by the offset amount  
 
+## Overlap  
+Outputs only the overlapping tiles of two blueprint layers  
+
 ## Smooth
 Smoothes the map by the smoothness amount.  
 
