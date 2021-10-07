@@ -9,12 +9,14 @@ in different TileWorldCreator assets. Depending on what kind of tiles you want t
 ### Create a Tiles Preset
 1. Right click in the project view and select `Create / TileWorldCreator / New 3D 4-Tiles preset` or `New 3D 6-Tiles preset`  
 2. Assign your tiles based on their type  
+ 
 **4-Tiles**  
 + ![edgeTile](img/edgeTile.png) `Edge`  
 + ![exteriorCornerTile](img/exteriorCornerTile.png) `Exterior Corner`    
 + ![interiorCornerTile](img/interiorCornerTile.png) `Interior Corner`  
 + ![fillTile](img/fillTile.png) `Fill`  
-**6-Tiles**
+  
+**6-Tiles**  
 + ![singleTile](img/singleTile.png) `Single`  
 + ![straightTile](img/straightTile.png) `Straight`  
 + ![cornerTile](img/cornerTile.png) `Corner`  
