@@ -58,3 +58,10 @@ The scene is still quite empty though. Let's instantiate some tiles.
 ![quickstart4](img/twcQuickStart4.gif)  
 
 > Next: Play with different modifiers and tile sets. Also have a look at the demo scenes. 
+
+
+## Read more about:
+> Blueprint layers [BlueprintLayers](/BlueprintLayers.md)  
+> Build layers [BuildLayers](/BuildLayers.md)  
+> Tiles preset [TilesPreset](/TilesPreset.md)  
+> Merging & Clusters [MergingAndClusters](/MergingAndClusters.md)    
