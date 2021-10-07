@@ -12,7 +12,7 @@ The build layers takes a TileWorldCreator tile-preset and automatically instanti
 
 ### 4-Tiles  
 ![4tiles](img/new4Tiles.png)  
-A 4-Tiles build layer uses only four tiles to build a complete map. Therefore tiles needs at least 2 adjacent neighbouring tiles to make sure that the map is completely "closed". This means that the assigned blueprint map will be subdivided and a instantiated tiles should be half the size of the cell size.  
+A 4-Tiles build layer uses only four tiles to build a complete map. Therefore tiles needs at least 2 adjacent neighbouring tiles to make sure that the map is completely "closed". This means that the assigned blueprint map will be subdivided and instantiated tiles should be half the size of the cell size.  
 > It is recommended to enable `Scale tile by cell size` in the build layer when using a 4 Tiles build layer.  
 
 ### 6-Tiles  
@@ -44,27 +44,34 @@ A 6-Tiles build layer uses six tiles. It can be used for creating path like stru
 + `Ignore layers`  
   Ignore layers can be used if you want to skip instantiation for tiles from another blueprint layer which overlaps with the assigned one.  
   **Example:**  
-  ![ignoreLayersExample](img/ignoreLayersExample.png)
-  Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer.  
+  ![ignoreLayersExample](img/ignoreLayersExample.png)  
+Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer.  
   
   
 ## Tiles preset  
 ![tilesPreset](img/tilesPreset.png)  
 Tiles are stored in a separate asset file (scriptable object). This has the advantage of being able to reuse tile presets 
-in different TileWorldCreator assets.
+in different TileWorldCreator assets. Depending on what kind of tiles you want to use (4-Tiles or 6-Tiles) you will have to create the appropriate tile-preset type.
 
   + `Rotation offset` Depending on how your tiles have been created in your 3D software, you will have to add a rotation offset.
   + `Scaling offset` Add a scaling offset to a single tile. Often used when changing the cell size (!=1)
 
 ### Create a Tiles Preset
-1. Right click in the project view and select `Create / TileWorldCreator / New 3D Tiles preset`
-2. Assign your tiles based on their type 
+1. Right click in the project view and select `Create / TileWorldCreator / New 3D 4-Tiles preset` or `New 3D 6-Tiles preset`  
+2. Assign your tiles based on their type  
+**4-Tiles**  
 + ![edgeTile](img/edgeTile.png) `Edge`  
 + ![exteriorCornerTile](img/exteriorCornerTile.png) `Exterior Corner`    
 + ![interiorCornerTile](img/interiorCornerTile.png) `Interior Corner`  
 + ![fillTile](img/fillTile.png) `Fill`  
-
-
+**6-Tiles**
++ ![singleTile](img/singleTile.png) `Single`  
++ ![straightTile](img/straightTile.png) `Straight`  
++ ![cornerTile](img/cornerTile.png) `Corner`  
++ ![threeWay](img/threeWayTile.png) `Three way`  
++ ![fourWay](img/fourWayTile.png) `Four way`  
++ ![deadEndTile](img/deadEndTile.png) `Dead end`  
+  
 ## Build objects layer
 ![instantiationLayerObject](img/instantiationLayerObjects.png)  
 The build objects layer instantiates single prefabs based on the assigned blueprint layer.  
