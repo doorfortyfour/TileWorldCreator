@@ -7,7 +7,7 @@ There are currently three different build layers:
 + Objects
 
 
-## 3D 4-Tiles & 6-Tiles build layers  
+## 4-Tiles & 6-Tiles build layers  
 The build layers takes a TileWorldCreator tile-preset and automatically instantiates the tiles based on the assigned blueprint layer. It also takes care of the correct rotation of the tiles. Depending on how you have exported your tiles from your 3d software you might need to adjust the rotation offset. 
 
 ### 4-Tiles  
@@ -18,7 +18,7 @@ A 4-Tiles build layer uses only four tiles to build a complete map. Therefore ti
 ### 6-Tiles  
 ![6tiles](img/new6Tiles.png)  
 A 6-Tiles build layer uses six tiles. It can be used for creating path like structures like roads, fences, pipes, rivers etc.  
-
+  
 ![instantiationLayerTiles](img/buildLayer.png)
 
 + `Layer Name`  
