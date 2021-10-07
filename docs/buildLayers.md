@@ -2,17 +2,9 @@
 Build layers are responsible for instantiating prefabs (tiles, objects) based on their assigned blueprint layer. 
 There are currently three different build layers:  
 
-### 3D 4-Tiles  
-Mainly used to build maps/levels with only 4 tiles.  
-Edge, ext. Corner, int. Corner, fill
-
-### 3D 6-Tiles  
-Used to create path like structures. For example: roads, fences, paths, pipes etc.  
-Single, straight, corner, three way, four way, dead end  
-  
-### Objects  
-Used for placing single objects based on the assigned blueprint map. For example:
-Trees, plants but also enemies, props etc. 
++ 3D 4-Tiles
++ 3D 6-Tiles
++ Objects
 
 
 ## 3D 4-Tiles && 6-Tiles build layers
@@ -56,9 +48,10 @@ A 6-Tiles build layer uses six tiles. It can be used for creating path like stru
   Ignore layers can be used if you want to skip instantiation for tiles from another blueprint layer which overlaps with the assigned one.  
   **Example:**  
   ![ignoreLayersExample](img/ignoreLayersExample.png)
-  Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer. 
-
-### Tiles preset
+  Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer.  
+  
+  
+## Tiles preset
 ![tilesPreset](img/tilesPreset.png)  
 Tiles are stored in a separate asset file (scriptable object). This has the advantage of being able to reuse tile presets 
 in different TileWorldCreator assets.
@@ -77,7 +70,8 @@ in different TileWorldCreator assets.
 
 ### Build objects layer
 ![instantiationLayerObject](img/instantiationLayerObjects.png)  
-The build objects layer instantiates single prefabs based on the assigned blueprint layer.
+The build objects layer instantiates single prefabs based on the assigned blueprint layer.  
+Can be used for placing trees, props or even enemies or the player character itself.
   
 + `Name`  
   The layer name  
