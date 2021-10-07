@@ -46,31 +46,7 @@ A 6-Tiles build layer uses six tiles. It can be used for creating path like stru
   **Example:**  
   ![ignoreLayersExample](img/ignoreLayersExample.png)  
 Here we have a map which has two blueprint layers `Base` and `Inner`. The `Base`layer generates the ground and the `Inner` layer shrinks the base layer by one tile to create the inner "grass" map. Because of this, we don't want to instantiate the tiles in the `Base` layer which are overlapping with the `Inner` layer. Therefore we assign the `Inner` layer to the ignore layers of the `Cliffs` build layer.  
-  
-  
-## Tiles preset  
-![tilesPreset](img/tilesPreset.png)  
-Tiles are stored in a separate asset file (scriptable object). This has the advantage of being able to reuse tile presets 
-in different TileWorldCreator assets. Depending on what kind of tiles you want to use (4-Tiles or 6-Tiles) you will have to create the appropriate tile-preset type.
 
-  + `Rotation offset` Depending on how your tiles have been created in your 3D software, you will have to add a rotation offset.
-  + `Scaling offset` Add a scaling offset to a single tile. Often used when changing the cell size (!=1)
-
-### Create a Tiles Preset
-1. Right click in the project view and select `Create / TileWorldCreator / New 3D 4-Tiles preset` or `New 3D 6-Tiles preset`  
-2. Assign your tiles based on their type  
-**4-Tiles**  
-+ ![edgeTile](img/edgeTile.png) `Edge`  
-+ ![exteriorCornerTile](img/exteriorCornerTile.png) `Exterior Corner`    
-+ ![interiorCornerTile](img/interiorCornerTile.png) `Interior Corner`  
-+ ![fillTile](img/fillTile.png) `Fill`  
-**6-Tiles**
-+ ![singleTile](img/singleTile.png) `Single`  
-+ ![straightTile](img/straightTile.png) `Straight`  
-+ ![cornerTile](img/cornerTile.png) `Corner`  
-+ ![threeWay](img/threeWayTile.png) `Three way`  
-+ ![fourWay](img/fourWayTile.png) `Four way`  
-+ ![deadEndTile](img/deadEndTile.png) `Dead end`  
   
 ## Build objects layer
 ![instantiationLayerObject](img/instantiationLayerObjects.png)  
@@ -92,10 +68,6 @@ If this is not desired leave it off.
   Modifies the objects transform by random values.  
 + `Merge`  
   Merge the instantiated objects in to clusters.  
-
-## Merging & Clusters :id=merging
-A build layer takes care of partitioning a map into smaller clusters. Each cluster contains multiple tile objects. When merging is enabled, all tiles inside of a cluster are being merged together.  When changing a map - by painting tiles for example - the build tiles layer checks for all changed tiles in each cluster and updates only the changed cluster. 
-> When creating large maps it is highly recommended to enable merging. 
 
 
 ## Execute layers
