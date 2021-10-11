@@ -18,6 +18,7 @@ A 4-Tiles build layer uses only four tiles to build a complete map. Therefore ti
 ### 6-Tiles  
 ![6tiles](img/new6Tiles.png)  
 A 6-Tiles build layer uses six tiles. It can be used for creating path like structures like roads, fences, pipes, rivers etc.  
+Unlike the 4-Tiles build layer, tiles from a 6-Tiles preset can be placed on cells with one or less adjacent tile neighbours.  
   
 ![instantiationLayerTiles](img/buildLayer.png)
 
