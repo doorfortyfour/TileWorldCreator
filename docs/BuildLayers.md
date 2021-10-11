@@ -74,4 +74,4 @@ If this is not desired leave it off.
 ## Execute layers
 
 You can either execute each layer separately, the complete blueprint/build stack or all layers together by clicking on the appropriate buttons.
-> Hold the Left-CTRL key while clicking on one of these buttons to force a complete rebuild of the map.
+!> Hold the Left-CTRL key while clicking on one of these buttons to force a complete rebuild of the map.
