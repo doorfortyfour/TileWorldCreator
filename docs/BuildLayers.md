@@ -26,6 +26,11 @@ Unlike the 4-Tiles build layer, tiles from a 6-Tiles preset can be placed on cel
   The layer name  
 + `Blueprint Layer`  
   The blueprint layer it should use for instantiation  
++ `Orientation Layer` (only 6-Tiles layer)  
+  The orientation layer can be used to set the direction of a single 6-Tiles tile. So basically if you want to place a single ramp tile outside of an "island" layer,  
+  the tile doesn't know how to rotate it towards the "island" layer. Therefore you would need to assign the "island" layer as the orientation layer.  
+  Please see the demo scene: `09_AutomaticRampsPlacement` to understand the concept behind it.  
+  You can also enable `Use only orientation layer` which will then ignore the cells from the assigned blueprint layer to rotate the tiles.  
 + `Scale tile by cell size`  
   Scale the tile automatically based on the cell size. This works only reliable if your tile prefab has a size of 1x1 units
 + `Global Position offset` `Global scaling offset`  
