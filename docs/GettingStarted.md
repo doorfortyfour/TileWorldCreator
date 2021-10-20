@@ -14,6 +14,9 @@ If you're using URP or HDRP you can simply upgrade those materials in your proje
 * HDRP  
 `Edit / Render Pipeline / HD Render Pipeline / Upgrade Project Materials to HDRP Materials`  
 
+### AOT Platforms
+!> API level .Net 4.X is required for all AOT build platforms
+
 ## Quick start
 
 > Let's create our first map.  
