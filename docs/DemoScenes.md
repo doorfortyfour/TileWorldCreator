@@ -34,3 +34,12 @@ This demo demonstrates how to add custom tiles like ramps on specific positions.
   
 + **10 Generate by Texture**  
 This demo scene demonstrates the use of the texture generator and how you can assign a texture by script during runtime.
+  
++ **11 Mix Tile-sets**  
+A demonstration of how to mix different tile-sets on one map by using the ignore layer feature.  
+  
++ **12 Anno-like road editor**  
+This demo scene shows how to create a similar road system like in the game "Anno".
+  
++ **13 Pathfinding**  
+This demo scene demonstrates the pathfinding generator.
