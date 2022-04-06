@@ -58,3 +58,8 @@ Generates a dot grid
 ![checkerboard](img/checkerboard.png)  
 Generates a checkerboard like grid  
   
+## Pathfinding  
+![pathfinding](img/pathfinding.gif)  
+The pathfinding generator takes a start position and end position (layers) and generates a path on a navigation layer.
+Please see the included demo scenes for more information.
+  
